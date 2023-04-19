@@ -1,0 +1,21 @@
+#about {
+	--stack-gap: 1em;
+}
+
+#about p:first-of-type {
+	font-size: var(--step-1);
+}
+
+@media (min-width: 64rem) {
+	#about .content {
+		--flow-space: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr auto;
+		gap: var(--space-xs) var(--space-l-xl);
+	}
+
+	#about p:first-of-type {
+		grid-row: 1/-1;
+	}
+}
