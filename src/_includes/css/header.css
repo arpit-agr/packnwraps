@@ -21,13 +21,13 @@ header nav a {
 	position: relative;
 	display: inline-block;
 	padding-block: var(--nav-link-padding);
-	text-decoration: none;
-	transition: all 300ms ease;
+	/* text-decoration: none; */
+	/* transition: all 300ms ease; */
 }
 
-header nav a:hover {
+/* header nav a:hover {
 	font-weight: 500;
-}
+} 
 
 header .underline-illustration {
 	position: absolute;
@@ -49,7 +49,7 @@ header a:where(:hover, :focus-visible) .underline-illustration .underline-path {
 	animation-duration: 300ms;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-}
+} */
 
 .logo {
 	block-size: var(--logo-height);
