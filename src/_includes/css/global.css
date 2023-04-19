@@ -66,11 +66,11 @@ h2 {
 }
 
 h1 {
-	font-size: var(--step-5);
+	font-size: var(--step-6);
 }
 
 h2 {
-	font-size: var(--step-4);
+	font-size: var(--step-5);
 }
 
 h3 {
@@ -78,7 +78,7 @@ h3 {
 }
 
 p {
-	max-inline-size: var(--text-line-length, 63ch);
+	max-inline-size: var(--text-line-length, 55ch);
 }
 
 a {
