@@ -1,4 +1,4 @@
-<ul class="product-materials-list">
+<ul class="product-materials-list" role="list">
   {% for product in products.list %}
     <li class="stack">
       <div class="content flow">
@@ -14,7 +14,7 @@
             </em>
           {% endif %}
         </h3>
-        <ul class="product-category-list">
+        <ul class="product-category-list flow" role="list">
           {% for item in product.category %}
             {% if item.type %}
               <li>
@@ -22,7 +22,7 @@
                   <summary>
                     {{ item.title }}
                   </summary>
-                  <ul class="product-subtype-list">
+                  <ul class="product-subtype-list flow">
                     {% for item in item.type %}
                       <li>{{ item }}</li>
                     {% endfor %}
