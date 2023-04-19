@@ -4,6 +4,7 @@
 	--max-inline-size: min(80rem, 100vw);
 	--max-vw-height: 100vh;
 	--logo-height: var(--space-m-xl);
+	--nav-link-padding: var(--space-xs-s);
 
 	--heading-text-color: var(--gray-100);
 	--body-primary-color: var(--gray-200);
@@ -36,4 +37,79 @@
 	:root {
 		--max-vw-height: 100svh;
 	}
+}
+
+body {
+	color: var(--body-primary-color);
+	background-color: var(--body-bg-color);
+
+	font-family: var(--font-plain);
+	font-size: var(--step-0);
+	line-height: var(--body-line-height);
+	-webkit-tap-highlight-color: transparent; /* for removing the highlight */
+}
+
+main {
+	/* --main-gap: var(--space-xl-2xl); */
+	--main-gap: var(--space-3xl-4xl);
+	--stack-gap: var(--main-gap);
+	--stack-horizontal-alignment: stretch;
+	padding-block: var(--stack-gap);
+}
+
+h1,
+h2,
+h3 {
+	color: var(--heading-text-color);
+	font-weight: 500;
+	line-height: var(--heading-line-height);
+}
+
+h1,
+h2 {
+	letter-spacing: var(--heading-letter-spacing);
+}
+
+h1 {
+	font-size: var(--step-5);
+}
+
+h2 {
+	font-size: var(--step-4);
+}
+
+h3 {
+	font-size: var(--step-3);
+}
+
+p {
+	max-inline-size: var(--text-line-length, 63ch);
+}
+
+a {
+	color: inherit;
+	text-underline-offset: var(--space-3xs);
+}
+
+a:where(:hover, :focus-visible) {
+	color: var(--accent-dark);
+}
+
+/* TODO: add focus styles */
+
+/* TODO: check support for font-variant-caps */
+em {
+	color: var(--accent-dark);
+	font-style: normal;
+	font-weight: 400;
+	font-variant-caps: all-small-caps;
+	/* line-height: 1; */
+}
+
+.desc {
+	--text-line-length: 46ch;
+}
+
+:where([id]:not(main)) {
+	scroll-margin-top: calc(var(--main-gap) / 2);
 }
