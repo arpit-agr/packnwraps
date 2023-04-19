@@ -1,10 +1,13 @@
-#products h2 {
-	text-align: center;
-}
+/* magic number at which the product cards below go in vertical orientation  */
+@media (min-width: 36.1875rem) {
+	#products h2 {
+		text-align: center;
+	}
 
-#products .desc {
-	margin-inline: auto;
-	text-align: center;
+	#products .desc {
+		margin-inline: auto;
+		text-align: center;
+	}
 }
 
 @supports (text-wrap: balance) {
