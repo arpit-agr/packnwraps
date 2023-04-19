@@ -1,8 +1,22 @@
 <!-- capture the CSS content as a Nunjucks variable -->
 {% set css %}
+  {% include "./font-face.css" %}
   {% include "./reset.css" %}
   {% include "./a11y.css" %}
+  {% include "./type.css" %}
+  {% include "./space.css" %}
+  {% include "./color.css" %}
   {% include "./global.css" %}
+  {% include "./header.css" %}
+  {% include "./footer.css" %}
+  {% include "./hero.css" %}
+  {% include "./products.css" %}
+  {% include "./product-list.css" %}
+  {% include "./about.css" %}
+  {% include "./contact.css" %}
+  {% include "./underline.css" %}
+  {% include "./burst.css" %}
+  {% include "./utilities.css" %}
 {% endset %}
 
 <style>{{ css | cssmin | safe }}</style>
