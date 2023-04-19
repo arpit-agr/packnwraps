@@ -1,5 +1,5 @@
 header {
-	--cluster-gap: var(--space-l);
+	--cluster-gap: var(--space-xs);
 	--cluster-horizontal-alignment: space-between;
 	--cluster-vertical-alignment: center;
 	/* --cluster-vertical-alignment: end; */
@@ -14,20 +14,24 @@ header {
 } */
 
 header nav ul {
-	--cluster-gap: var(--space-s);
+	--cluster-gap: var(--space-2xs);
 }
 
 header nav a {
 	position: relative;
 	display: inline-block;
 	padding-block: var(--nav-link-padding);
-	/* text-decoration: none; */
-	/* transition: all 300ms ease; */
+	text-transform: uppercase;
+	font-family: var(--font-monospace);
+	color: var(--heading-text-color);
+	text-decoration-color: var(--accent-dark);
+	text-decoration: none;
 }
 
-/* header nav a:hover {
-	font-weight: 500;
-} 
+header nav a:hover {
+	color: var(--accent-dark);
+	/* text-decoration-color: currentColor; */
+}
 
 header .underline-illustration {
 	position: absolute;
@@ -49,7 +53,7 @@ header a:where(:hover, :focus-visible) .underline-illustration .underline-path {
 	animation-duration: 300ms;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-} */
+}
 
 .logo {
 	block-size: var(--logo-height);
@@ -58,12 +62,22 @@ header a:where(:hover, :focus-visible) .underline-illustration .underline-path {
 	translate: 0 4px;
 }
 
-@media (max-width: 23.25rem) {
+@media (max-width: 23rem) {
+	:root {
+		--logo-height: var(--space-xl);
+		--header-height: calc(
+			var(--logo-height) + var(--nav-link-padding) +
+				(2 * var(--nav-link-padding)) + (1em * var(--body-line-height))
+		);
+	}
+
 	header {
+		--cluster-gap: 0;
 		--cluster-horizontal-alignment: center;
 	}
 
 	.logo {
-		translate: 0 16px;
+		margin-block-start: var(--nav-link-padding);
+		translate: 0 0;
 	}
 }
