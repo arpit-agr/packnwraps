@@ -45,7 +45,7 @@ main {
 	--main-gap: var(--space-3xl-4xl);
 	--stack-gap: var(--main-gap);
 	--stack-horizontal-alignment: stretch;
-	padding-block: var(--stack-gap);
+	padding-block: var(--main-gap);
 }
 
 h1,

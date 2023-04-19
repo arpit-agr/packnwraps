@@ -1,5 +1,6 @@
 ---
 title: "Food service disposables & packaging products"
+subtitle: "We take pride in delivering quality products with complete adherence to international industry&nbsp;standards."
 about:
   heading: "About Us"
   content:

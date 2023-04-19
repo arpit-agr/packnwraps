@@ -1,5 +1,8 @@
 <section id="hero" class="stack">
-  <h1>{{ title | title | safe }}</h1>
+  <div class="content stack">
+    <h1>{{ title | title }}</h1>
+    <p class="desc">{{ subtitle | safe }}</p>
+  </div>
   {# TODO: use 11ty image plugin #}
   {# TODO: check for a11y #}
   <img src="/images/product-high-res.webp" alt="" width="2559" height="2424">

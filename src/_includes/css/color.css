@@ -1,6 +1,6 @@
 :root {
 	--primary-hue: 145;
-	--secondary-hue: 240;
+	/* --secondary-hue: 240; */
 
 	--green-200: hsl(var(--primary-hue), 89%, 27%);
 	--green-300: hsl(var(--primary-hue), 89%, 43%);
@@ -16,6 +16,8 @@
 	--gray-500: hsl(var(--primary-hue), 11%, 96%);
 
 	--white: hsl(var(--primary-hue), 0%, 96%);
+	--red: hsl(358, 68%, 45%);
+
 	--green-opacity: hsla(var(--primary-hue), 89%, 43%, 50.2%);
 	--gray-opacity: hsla(var(--primary-hue), 2%, 40%, 50.2%);
 }
