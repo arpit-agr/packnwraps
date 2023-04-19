@@ -8,7 +8,7 @@
 		0 7px 14px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%));
 }
 
-.hero {
+#hero {
 	display: grid;
 	grid-template-columns: 1fr;
 	align-items: center;
@@ -21,18 +21,18 @@
 }
 
 @media (min-width: 40rem) {
-	.hero {
+	#hero {
 		grid-template-columns: 1fr 25vw;
 	}
 }
 
-.hero h1 {
+#hero h1 {
 	font-size: var(--space-xl-5xl);
 	padding: var(--gutter);
 	padding: var(--space-s-l);
 }
 
-.hero img {
+#hero img {
 	place-self: center;
 	inline-size: auto;
 	block-size: 50vh;
@@ -40,7 +40,7 @@
 	object-position: left;
 } */
 
-.hero {
+#hero {
 	--stack-horizontal-alignment: center;
 	--stack-vertical-alignment: space-between;
 	--stack-gap: var(--space-7xl);
@@ -67,19 +67,19 @@
 	overflow: visible clip;
 }
 
-.hero h1 {
+#hero h1 {
 	/* max-inline-size: 22ch; */
 	font-size: var(--space-2xl-5xl);
 	text-align: center;
 }
 
 @supports (text-wrap: balance) {
-	.hero h1 {
+	#hero h1 {
 		text-wrap: balance;
 	}
 }
 
-.hero img {
+#hero img {
 	margin-block-end: -10%;
 
 	inline-size: 100vw;
