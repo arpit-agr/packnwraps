@@ -109,11 +109,13 @@ em {
 }
 
 :where([id]:not(main)) {
-	scroll-margin-top: calc(var(--main-gap) / 2);
+	scroll-margin-top: calc((var(--section-gap) / 2) + var(--header-height));
 }
 
-:target {
-	outline-offset: var(--gutter);
-	outline: var(--space-4xs) solid var(--accent-opacity);
-	border-radius: var(--space-4xs);
-}
+/* @media (min-width: 48rem) {
+	:target:not(#products) {
+		box-shadow: inset 0 0 calc(var(--card-padding) * 0.25) var(--accent);
+		border-radius: var(--space-2xs);
+		padding: var(--card-padding);
+	}
+} */
