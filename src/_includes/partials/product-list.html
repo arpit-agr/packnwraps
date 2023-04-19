@@ -1,0 +1,43 @@
+<ul class="product-materials-list">
+  {% for product in products.list %}
+    <li class="stack">
+      <div class="content flow">
+        <h3>
+          {{ product.title }}
+          {% if product.specialText %}
+            <em class="special-text">
+              {% include "partials/burst.html" %}
+              {{ product.specialText }}
+              {% include "partials/burst.html" %}
+              {# TODO: delete the partial below if it is not required #}
+              {# {% include "partials/underline.html" %} #}
+            </em>
+          {% endif %}
+        </h3>
+        <ul class="product-category-list">
+          {% for item in product.category %}
+            {% if item.type %}
+              <li>
+                <details>
+                  <summary>
+                    {{ item.title }}
+                  </summary>
+                  <ul class="product-subtype-list">
+                    {% for item in item.type %}
+                      <li>{{ item }}</li>
+                    {% endfor %}
+                  </ul>
+                </details>
+              </li>
+            {% else %}
+              <li>{{ item.title }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      {# TODO: use 11ty image plugin #}
+      {# TODO: check for a11y #}
+      <img src="/images/{{ product.image }}" alt="">
+    </li>
+  {% endfor %}
+</ul>

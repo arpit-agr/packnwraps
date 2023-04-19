@@ -1,5 +1,9 @@
 {%- extends "layouts/base.html" -%}
 
 {%- block content -%}
+  {%- include "partials/hero-section.html" -%}
+  {%- include "partials/product-section.html" -%}
+  {%- include "partials/about-section.html" -%}
+  {%- include "partials/contact-section.html" -%}
   {{ content | safe }}
 {%- endblock -%}

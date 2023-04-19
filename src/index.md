@@ -11,7 +11,7 @@ products:
   description: "We offer customized programs, consolidation programs, and private labeling to meet the unique needs of our customers."
   list:
     - title: "Paper"
-      emphasis: "PFAS free"
+      specialText: "PFAS free"
       image: "cardboard-packaging-large.webp"
       category:
         - title: "Bags"
@@ -59,7 +59,7 @@ products:
         - title: "Soft Loop Handle Shopping Bags"
     - title: "Bagasse"
       image: "bagasse.webp"
-      emphasis: "PFAS free"
+      specialText: "PFAS free"
       category:
         - title: "Plates"
         - title: "Compartment Trays"
