@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(directoryOutputPlugin);
 
 	//Passthrough copy
-	// eleventyConfig.addPassthroughCopy("./src/fonts");
+	eleventyConfig.addPassthroughCopy("./src/fonts");
 	eleventyConfig.addPassthroughCopy("./src/images");
 	// eleventyConfig.addPassthroughCopy("./src/scripts");
 	// eleventyConfig.addPassthroughCopy({"./src/favicons": "/"});
