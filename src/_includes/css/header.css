@@ -6,6 +6,12 @@ header {
 
 	/* margin-block-start: var(--gutter); */
 	/* border-radius: var(--space-3xs); */
+
+	position: sticky;
+	inset-block-start: 0;
+	background-color: var(--body-bg-color);
+	border-image: conic-gradient(var(--body-bg-color) 0 0) fill 1 / /0 50vw;
+	z-index: 1;
 }
 
 /* header nav {
