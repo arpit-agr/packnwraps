@@ -10,6 +10,7 @@
 	);
 	--main-padding: var(--space-l-5xl);
 	--section-gap: var(--space-3xl-4xl);
+	--card-padding: var(--space-l);
 
 	--heading-text-color: var(--green-100);
 	--body-primary-color: var(--gray-200);

@@ -25,3 +25,15 @@
 	justify-content: var(--stack-vertical-alignment, flex-start);
 	align-items: var(--stack-horizontal-alignment, flex-start);
 }
+
+:where(.grid) {
+	display: grid;
+	grid-template-columns: repeat(var(--columns, 1), 1fr);
+	gap: var(--space-xl-m);
+}
+
+@media (min-width: 48rem) {
+	.grid {
+		--columns: 2;
+	}
+}
