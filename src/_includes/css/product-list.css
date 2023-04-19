@@ -123,34 +123,38 @@
 .product-category-list summary {
 	display: flex;
 	align-items: baseline;
-	/* max-inline-size: max-content; */
+	max-inline-size: max-content;
 	/* FIXME: magic number */
 	gap: 0 0.66ch;
 	list-style: none;
 	cursor: pointer;
-	font-variation-settings: "wght" 400;
-	transition: font-variation-settings 0.2s linear;
+	border-radius: var(--space-4xs);
 }
 
-/* FIXME: font-variation-settings might not work for all fonts */
 .product-category-list summary:hover,
 .product-category-list summary:focus-visible {
 	color: var(--accent-dark);
-	font-variation-settings: "wght" 500;
+	outline: var(--space-5xs) solid var(--accent-opacity);
+	outline-offset: var(--space-3xs);
 }
 
 .product-category-list summary::before {
-	content: "+";
+	/* content: "+"; */
+	content: "▾";
 	display: block;
 	color: var(--accent);
 	line-height: 1;
-	transform: scale(1.4);
+	/* transform: scale(1.4); */
+	scale: 1.4;
+	rotate: 0deg;
 	/* transform-origin: right bottom; */
 	font-family: var(--font-monospace);
+	transition: rotate 400ms ease;
 }
 
 .product-category-list [open] summary::before {
-	content: "—";
+	/* content: "—"; */
+	rotate: 180deg;
 }
 
 /* Hide default marker */
