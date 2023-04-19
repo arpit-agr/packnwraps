@@ -1,0 +1,44 @@
+.underlined-text {
+	position: relative;
+	display: inline-block;
+	font-style: normal;
+	z-index: 1;
+}
+
+.underlined-text .underline-illustration {
+	position: absolute;
+	width: 105%;
+	height: 0.32em;
+	left: -3%;
+	top: 100%;
+	z-index: -1;
+}
+
+.underline-illustration .underline-path {
+	-webkit-clip-path: url(#underline-clip-path);
+	clip-path: url(#underline-clip-path);
+	fill: none;
+	stroke: #00d959;
+	/* stroke: var(--green-300); */
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+	stroke-width: 12px;
+}
+
+.underline-illustration .underline-path {
+	stroke-dasharray: 1.1;
+	stroke-dashoffset: 1.1;
+}
+
+.underline-illustration.animate .underline-path {
+	animation: draw-path 1s ease-in-out forwards;
+}
+
+@keyframes draw-path {
+	0% {
+		stroke-dashoffset: 1.1;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}

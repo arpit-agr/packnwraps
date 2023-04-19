@@ -1,0 +1,42 @@
+.special-text {
+	position: relative;
+	display: inline-block;
+	font-style: normal;
+	z-index: 1;
+	font-size: var(--step-2);
+	font-weight: 500;
+}
+
+.burst-illustration {
+	--animation-duration: 1s;
+	display: inline-block;
+	inline-size: auto;
+	block-size: var(--step-1);
+	vertical-align: middle;
+}
+
+.burst-illustration .burst-path {
+	fill: none;
+	stroke: var(--accent);
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+	stroke-width: var(--space-2xs);
+}
+
+.burst-illustration .burst-top {
+	-webkit-clip-path: url(#burst-top-clip-path);
+	clip-path: url(#burst-top-clip-path);
+}
+
+.burst-illustration .burst-path {
+	stroke-dasharray: 1.1;
+	stroke-dashoffset: 1.1;
+}
+
+.burst-illustration.animate .burst-path {
+	animation: draw-path var(--animation-duration) ease-in-out forwards;
+}
+
+.burst-illustration:nth-of-type(2) {
+	transform: scaleX(-1);
+}
