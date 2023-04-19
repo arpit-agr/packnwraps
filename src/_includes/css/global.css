@@ -1,0 +1,39 @@
+:root {
+	--gutter: var(--space-s-m);
+	/* TODO: what happens if the max width is just 80rem */
+	--max-inline-size: min(80rem, 100vw);
+	--max-vw-height: 100vh;
+	--logo-height: var(--space-m-xl);
+
+	--heading-text-color: var(--gray-100);
+	--body-primary-color: var(--gray-200);
+	--body-secondary-color: var(--gray-300);
+	--body-bg-color: var(--gray-400);
+	--card-bg-color: var(--white);
+	--accent-dark: var(--green-200);
+	--accent: var(--green-300);
+
+	--font-plain: "InterVariable", Inter-fallback, system-ui, sans-serif;
+	--font-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco,
+		Consolas, "Liberation Mono", "Courier New", monospace;
+	--body-line-height: 1.5;
+	--heading-line-height: 1.05;
+	--heading-letter-spacing: -0.03em;
+	--text-letter-spacing: 0.03em;
+}
+
+/* :root {
+	--shadow-color: var(--primary-hue) 3% 15%;
+	--shadow-strength: 1%;
+	--shadow-1: 0 1px 2px -1px hsl(var(--shadow-color) /
+				calc(var(--shadow-strength) + 9%));
+	--shadow-2: 0 3px 5px -2px hsl(var(--shadow-color) /
+					calc(var(--shadow-strength) + 3%)),
+		0 7px 14px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%));
+} */
+
+@supports (height: 100svh) {
+	:root {
+		--max-vw-height: 100svh;
+	}
+}
