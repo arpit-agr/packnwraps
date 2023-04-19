@@ -1,0 +1,7 @@
+footer {
+	--cluster-horizontal-alignment: space-between;
+	--cluster-gap: var(--space-3xs);
+	padding-block: var(--space-xs);
+	font-size: var(--step--1);
+	color: var(--body-secondary-color);
+}
