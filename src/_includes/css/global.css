@@ -13,6 +13,7 @@
 	--card-bg-color: var(--white);
 	--accent-dark: var(--green-200);
 	--accent: var(--green-300);
+	--accent-opacity: var(--green-opacity);
 
 	--font-plain: "InterVariable", Inter-fallback, system-ui, sans-serif;
 	--font-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco,
@@ -22,16 +23,6 @@
 	--heading-letter-spacing: -0.03em;
 	--text-letter-spacing: 0.03em;
 }
-
-/* :root {
-	--shadow-color: var(--primary-hue) 3% 15%;
-	--shadow-strength: 1%;
-	--shadow-1: 0 1px 2px -1px hsl(var(--shadow-color) /
-				calc(var(--shadow-strength) + 9%));
-	--shadow-2: 0 3px 5px -2px hsl(var(--shadow-color) /
-					calc(var(--shadow-strength) + 3%)),
-		0 7px 14px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%));
-} */
 
 @supports (height: 100svh) {
 	:root {
@@ -112,4 +103,10 @@ em {
 
 :where([id]:not(main)) {
 	scroll-margin-top: calc(var(--main-gap) / 2);
+}
+
+:target {
+	outline-offset: var(--gutter);
+	outline: var(--space-4xs) solid var(--accent-opacity);
+	border-radius: var(--space-4xs);
 }
