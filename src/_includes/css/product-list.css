@@ -3,8 +3,8 @@
 
 	display: grid;
 	grid-template-columns: repeat(var(--columns, 1), 1fr);
-	/* gap: var(--space-l-s); */
-	gap: var(--space-xl-s);
+	/* gap: var(--space-xl-s); */
+	gap: var(--space-xl-m);
 }
 
 @media (min-width: 48rem) {
