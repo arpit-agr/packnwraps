@@ -5,12 +5,15 @@
 	--max-vw-height: 100vh;
 	--logo-height: var(--space-m-xl);
 	--nav-link-padding: var(--space-xs-s);
+	--main-padding: var(--space-l-5xl);
+	--section-gap: var(--space-3xl-4xl);
 
-	--heading-text-color: var(--gray-100);
+	--heading-text-color: var(--green-100);
 	--body-primary-color: var(--gray-200);
 	--body-secondary-color: var(--gray-300);
 	--body-bg-color: var(--gray-400);
 	--card-bg-color: var(--white);
+	--accent-darkest: var(--green-100);
 	--accent-dark: var(--green-200);
 	--accent: var(--green-300);
 	--accent-opacity: var(--green-opacity);
@@ -41,11 +44,9 @@ body {
 }
 
 main {
-	/* --main-gap: var(--space-xl-2xl); */
-	--main-gap: var(--space-3xl-4xl);
-	--stack-gap: var(--main-gap);
+	--stack-gap: var(--section-gap);
 	--stack-horizontal-alignment: stretch;
-	padding-block: var(--main-gap);
+	padding-block: var(--main-padding);
 }
 
 h1,
@@ -80,6 +81,9 @@ p {
 a {
 	color: inherit;
 	text-underline-offset: var(--space-3xs);
+	text-decoration-color: var(--accent-dark);
+	/* text-decoration-thickness: 1.5px; */
+	transition: all 200ms ease;
 }
 
 a:where(:hover, :focus-visible) {

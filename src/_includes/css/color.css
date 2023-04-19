@@ -2,6 +2,7 @@
 	--primary-hue: 145;
 	/* --secondary-hue: 240; */
 
+	--green-100: hsl(var(--primary-hue), 89%, 12%);
 	--green-200: hsl(var(--primary-hue), 89%, 27%);
 	--green-300: hsl(var(--primary-hue), 89%, 43%);
 	--green-400: hsl(var(--primary-hue), 75%, 85%);
