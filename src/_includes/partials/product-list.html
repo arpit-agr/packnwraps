@@ -3,7 +3,10 @@
     <li class="stack">
       <div class="content flow">
         <h3>
-          {{ product.title }}
+          <span>
+            {{ product.title }}
+            {% include "partials/underline.html" %}
+          </span>
           {% if product.specialText %}
             <em class="special-text">
               {% include "partials/burst.html" %}
