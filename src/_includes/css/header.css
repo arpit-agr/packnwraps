@@ -18,17 +18,37 @@ header nav ul {
 }
 
 header nav a {
+	position: relative;
 	display: inline-block;
 	padding-block: var(--nav-link-padding);
 	text-decoration: none;
-	/* text-transform: uppercase; */
-	/* letter-spacing: var(--text-letter-spacing); */
-	/* font-size: var(--step--1); */
-	/* font-weight: 500; */
+	transition: all 300ms ease;
 }
 
 header nav a:hover {
-	text-decoration: revert;
+	font-weight: 500;
+}
+
+header .underline-illustration {
+	position: absolute;
+	inset-block-start: calc(
+		100% - var(--nav-link-padding) - (0.125 * 1em * var(--body-line-height))
+	);
+	inset-inline-start: 0;
+	inline-size: 100%;
+	block-size: var(--space-4xs);
+}
+
+header .underline-illustration .underline-path {
+	stroke-dashoffset: 1.1;
+	stroke: currentColor;
+}
+
+header a:where(:hover, :focus-visible) .underline-illustration .underline-path {
+	animation-name: draw-path;
+	animation-duration: 300ms;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
 }
 
 .logo {
