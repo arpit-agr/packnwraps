@@ -1,9 +1,11 @@
 {
-  "name": "Example",
-  "description": "This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission.",
-  "url": "https://example.com",
-  "themeColor": "#000",
-  "colorScheme": "light dark",
-  "developerName": "Arpit Agrawal",
-  "developerLink": "arpit.agrawal2502@gmail.com"
+	"name": "Packnwraps",
+	"description": "Packnwraps is a packaging solutions company that manufactures diverse food service disposables & packaging products",
+	"url": "https://packnwraps.com",
+	"themeColor": "#e6e6e6",
+	"colorScheme": "light",
+	"developer": {
+		"name": "Arpit Agrawal",
+		"email": "hello@arpit.codes"
+	}
 }
