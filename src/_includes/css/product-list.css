@@ -25,6 +25,11 @@
 	overflow: hidden;
 
 	container-type: inline-size;
+	transition: all 400ms ease;
+}
+
+.product-materials-list > li:hover {
+	box-shadow: inset 0 0 calc(var(--card-padding) * 0.25) var(--accent);
 }
 
 .product-materials-list .content {
