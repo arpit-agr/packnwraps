@@ -49,16 +49,15 @@
 
 	block-size: min(
 		calc(
-			var(--max-vw-height) -
-				((2 * var(--nav-link-padding)) + (1em * var(--body-line-height))) -
-				var(--main-gap) + var(--border-width)
+			var(--max-vw-height) - var(--header-height) - var(--main-padding) +
+				var(--border-width)
 		),
 		54rem
 	);
 	border-image: linear-gradient(
 			to right,
 			transparent,
-			var(--accent),
+			var(--accent-darkest),
 			transparent
 		)
 		1 / 1 / 0 stretch;
@@ -72,21 +71,6 @@
 	--stack-horizontal-alignment: center;
 	position: relative;
 	text-align: center;
-}
-
-#hero .content:after {
-	content: "";
-	position: absolute;
-	inset-block-start: 100%;
-	inline-size: var(--space-4xs);
-	block-size: 100%;
-	z-index: -1;
-	background-image: linear-gradient(
-		to bottom,
-		transparent,
-		var(--accent),
-		transparent
-	);
 }
 
 #hero h1 {
@@ -105,7 +89,7 @@
 #hero .desc {
 	display: none;
 	font-size: var(--step-1);
-	color: var(--accent-dark);
+	color: var(--accent-darkest);
 }
 
 /* @supports (text-wrap: balance) {
@@ -120,6 +104,22 @@
 	#hero .desc {
 		display: revert;
 	}
+}
+
+#hero .content:after {
+	content: "";
+	position: absolute;
+	inset-block-start: 100%;
+	inline-size: var(--space-4xs);
+	block-size: 100%;
+	z-index: -1;
+	background-image: linear-gradient(
+		to bottom,
+		transparent,
+		var(--accent-darkest),
+		transparent
+	);
+	/* opacity: 0.5; */
 }
 
 #hero img {
