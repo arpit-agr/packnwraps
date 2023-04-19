@@ -1,0 +1,93 @@
+/* :root {
+	--shadow-color: var(--primary-hue) 3% 15%;
+	--shadow-strength: 1%;
+	--shadow-1: 0 1px 2px -1px hsl(var(--shadow-color) /
+				calc(var(--shadow-strength) + 9%));
+	--shadow-2: 0 3px 5px -2px hsl(var(--shadow-color) /
+					calc(var(--shadow-strength) + 3%)),
+		0 7px 14px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%));
+}
+
+.hero {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--gutter);
+
+	overflow: hidden;
+	border-radius: var(--space-2xs);
+	background-color: var(--body-bg-color);
+}
+
+@media (min-width: 40rem) {
+	.hero {
+		grid-template-columns: 1fr 25vw;
+	}
+}
+
+.hero h1 {
+	font-size: var(--space-xl-5xl);
+	padding: var(--gutter);
+	padding: var(--space-s-l);
+}
+
+.hero img {
+	place-self: center;
+	inline-size: auto;
+	block-size: 50vh;
+	object-fit: cover;
+	object-position: left;
+} */
+
+.hero {
+	--stack-horizontal-alignment: center;
+	--stack-vertical-alignment: space-between;
+	--stack-gap: var(--space-7xl);
+
+	--border-width: var(--space-4xs);
+
+	block-size: min(
+		calc(
+			var(--max-vw-height) -
+				(2 * var(--nav-link-padding) + (1em * var(--body-line-height))) -
+				var(--main-gap) + var(--border-width)
+		),
+		50rem
+	);
+	border-image: linear-gradient(
+			to right,
+			transparent,
+			var(--body-primary-color),
+			transparent
+		)
+		1 / 1 / 0 stretch;
+	border-width: 0 0 var(--border-width) 0;
+	border-style: solid;
+	overflow: visible clip;
+}
+
+.hero h1 {
+	/* max-inline-size: 22ch; */
+	font-size: var(--space-2xl-5xl);
+	text-align: center;
+}
+
+@supports (text-wrap: balance) {
+	.hero h1 {
+		text-wrap: balance;
+	}
+}
+
+.hero img {
+	margin-block-end: -10%;
+
+	inline-size: 100vw;
+	max-inline-size: 1000px;
+	block-size: 100%;
+	/* TODO: do we need this max block size declaration? */
+	max-block-size: min(66vh, 640px);
+	object-fit: cover;
+	object-position: top;
+	/* filter: drop-shadow(1px 1px 0px black); */
+}
