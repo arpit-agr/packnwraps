@@ -8,19 +8,17 @@
     {%- include "partials/contact-section.html" -%}
   </div>
   {{ content | safe }}
+  
   {# TODO: defer scripts? #}
   <script>
     const header = document.querySelector(".site-head");
-    const intercept = document.createElement("div");
-
-    intercept.setAttribute("data-observer-intercept", "");
-    header.before(intercept);
+    const intercept = document.querySelector(".skip-to-main");
 
     const observer = new IntersectionObserver(([entry]) => {
-      // header.classList.toggle("sticky", !entry.isIntersecting);
       header.toggleAttribute("data-sticky", !entry.isIntersecting);
     });
 
     observer.observe(intercept);
   </script>
+
 {%- endblock -%}
