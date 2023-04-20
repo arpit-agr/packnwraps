@@ -29,6 +29,9 @@
 	--heading-line-height: 1.05;
 	--heading-letter-spacing: -0.03em;
 	--text-letter-spacing: 0.03em;
+	--outline-width: var(--space-4xs);
+	--outline-color: var(--accent);
+	--outline-offset: var(--space-3xs);
 }
 
 @supports (height: 100svh) {

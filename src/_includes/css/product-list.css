@@ -15,9 +15,9 @@
 	transition: all 400ms ease;
 }
 
-.product-materials-list > li:hover {
+/* .product-materials-list > li:hover {
 	box-shadow: inset 0 0 calc(var(--card-padding) * 0.25) var(--accent);
-}
+} */
 
 .product-materials-list .content {
 	padding: var(--card-padding);
@@ -121,8 +121,8 @@
 .product-category-list summary:hover,
 .product-category-list summary:focus-visible {
 	color: var(--accent-dark);
-	outline: var(--space-5xs) solid var(--accent-opacity);
-	outline-offset: var(--space-3xs);
+	outline: var(--outline-width) solid var(--outline-color);
+	outline-offset: var(--outline-offset);
 }
 
 .product-category-list summary::before {
