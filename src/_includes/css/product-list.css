@@ -25,6 +25,10 @@
 	padding: var(--card-padding);
 }
 
+.product-materials-list h3 {
+	--cluster-gap: var(--space-2xs);
+}
+
 .product-materials-list h3 span {
 	position: relative;
 }
@@ -32,7 +36,7 @@
 .product-materials-list .underline-illustration {
 	position: absolute;
 	inset-block-start: calc(
-		100% - (var(--step-3) * var(--heading-line-height) * 0.125)
+		100% - (var(--step-3) * var(--heading-line-height) * 0.0625)
 	);
 	inset-inline-start: 0;
 	inline-size: 100%;
