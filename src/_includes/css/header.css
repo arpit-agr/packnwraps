@@ -87,3 +87,15 @@ header a:where(:hover, :focus-visible) .underline-illustration .underline-path {
 		translate: 0 0;
 	}
 }
+
+header[data-sticky]:after {
+	content: "";
+	position: absolute;
+	inset-block-start: var(--header-height);
+	inset-inline-start: calc(-1 * var(--gutter));
+	inline-size: calc(100% + var(--gutter) + var(--gutter));
+	block-size: 1px;
+
+	background-color: var(--body-bg-color);
+	box-shadow: var(--custom-shadow);
+}
