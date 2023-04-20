@@ -19,7 +19,9 @@
 
 @media (max-width: 36em) {
 	.has-js .read-more {
-		display: block;
+		display: flex;
+		align-items: baseline;
+		gap: 0 var(--space-xs);
 	}
 
 	/* limits 'about us' items to 1 */
