@@ -26,7 +26,7 @@
 	padding: var(--space-3xs) var(--space-2xs);
 	background-color: var(--accent-darkest);
 	color: var(--white);
-	box-shadow: var(--shadow-6);
+	box-shadow: var(--shadow-5);
 	text-decoration: none;
 }
 
