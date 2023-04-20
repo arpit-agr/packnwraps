@@ -37,6 +37,10 @@
 	}
 }
 
+:root {
+	scroll-behavior: smooth;
+}
+
 body {
 	color: var(--body-primary-color);
 	background-color: var(--body-bg-color);
