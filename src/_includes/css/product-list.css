@@ -1,5 +1,7 @@
 .product-materials-list {
 	--flow-space: var(--space-xl);
+	/* --grid-gap: var(--space-xl-m); */
+	--grid-gap: var(--space-l-m);
 }
 
 .product-materials-list > li {
