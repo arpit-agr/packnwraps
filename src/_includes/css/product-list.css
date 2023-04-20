@@ -92,7 +92,17 @@
 	}
 
 	.product-category-list > li:not(:has(> details))::before {
-		content: "→   ";
+		/* content: "→   "; */
+		content: "";
+		display: inline-block;
+		inline-size: 1em;
+		block-size: 1em;
+		/* FIXME: hard coded a color value for the stroke */
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='percent-arrow-illustration animate' data-start='t' viewBox='0 0 57 108'%3E%3Cg style='fill:none;stroke:%23646866;stroke-linecap:round;stroke-miterlimit:10;stroke-width:16px'%3E%3Cpath d='M29.22 8.19c.41 20.93-2.42 62.37-3.07 91.68' class='percent-arrow-path arrow-body' pathLength='1'/%3E%3Cpath d='M26.15 99.87c-2.38-4.19-14.79-29.44-17.72-35.72' class='percent-arrow-path arrow-head-1' pathLength='1'/%3E%3Cpath d='M26.15 99.87c3.35-3.35 17.44-20.79 22.6-26.24' class='percent-arrow-path arrow-head-2' pathLength='1'/%3E%3C/g%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		rotate: -90deg;
+		margin-inline-end: var(--space-2xs);
+		vertical-align: top;
 	}
 }
 
@@ -112,7 +122,7 @@
 	align-items: baseline;
 	max-inline-size: max-content;
 	/* FIXME: magic number */
-	gap: 0 0.66ch;
+	gap: 0 var(--space-xs);
 	list-style: none;
 	cursor: pointer;
 	border-radius: var(--space-4xs);
