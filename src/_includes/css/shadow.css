@@ -1,7 +1,7 @@
-/* :root {
+:root {
 	--shadow-color: var(--primary-hue) 3% 15%;
-	--shadow-strength: 1%;
-	--shadow-1: 0 1px 2px -1px hsl(var(--shadow-color) /
+	--shadow-strength: 10%;
+	/* --shadow-1: 0 1px 2px -1px hsl(var(--shadow-color) /
 				calc(var(--shadow-strength) + 9%));
 	--shadow-2: 0 3px 5px -2px hsl(var(--shadow-color) /
 					calc(var(--shadow-strength) + 3%)),
@@ -34,5 +34,14 @@
 		0 22px 18px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
 		0 41px 33px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 6%)),
 		0 100px 80px -2px hsl(var(--shadow-color) /
+					calc(var(--shadow-strength) + 7%)); */
+	--custom-shadow: 0 1px 2px 0
+			hsl(var(--shadow-color) / calc(var(--shadow-strength) + 2%)),
+		0 3px 2px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+		0 7px 5px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 3%)),
+		0 12px 10px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 4%)),
+		0 22px 18px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%)),
+		0 41px 33px -2px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 6%)),
+		0 100px 80px -2px hsl(var(--shadow-color) /
 					calc(var(--shadow-strength) + 7%));
-} */
+}
