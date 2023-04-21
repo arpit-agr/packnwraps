@@ -45,34 +45,39 @@
 }
 
 .product-materials-list img {
+	max-block-size: 360px;
 	aspect-ratio: 4/3;
 	object-fit: cover;
 	object-position: top;
 	mix-blend-mode: darken;
 }
 
-@container (min-width: 34rem) {
+@media (min-width: 70rem) {
 	.product-materials-list img {
 		position: absolute;
 		inset-block-start: var(--card-padding);
 		inset-inline-end: 0;
-
-		max-inline-size: 50cqw;
 		max-block-size: unset;
+		block-size: 100%;
 		aspect-ratio: unset;
+		object-position: top left;
+
+		inline-size: 280px;
 	}
 }
 
-@supports not (max-width: 50cqw) {
-	@media (min-width: 70rem) {
+@supports (max-width: 50cqw) {
+	@container (min-width: 34rem) {
 		.product-materials-list img {
 			position: absolute;
 			inset-block-start: var(--card-padding);
 			inset-inline-end: 0;
-
-			aspect-ratio: unset;
-			max-inline-size: 280px;
 			max-block-size: unset;
+			block-size: 100%;
+			aspect-ratio: unset;
+			object-position: top left;
+
+			inline-size: 50cqw;
 		}
 	}
 }
