@@ -8,13 +8,9 @@
             {% include "partials/underline.html" %}
           </span>
           {% if product.specialText %}
-            <em class="special-text">
-              {% include "partials/burst.html" %}
-              {{ product.specialText }}
-              {% include "partials/burst.html" %}
-              {# TODO: delete the partial below if it is not required #}
-              {# {% include "partials/underline.html" %} #}
-            </em>
+            <span class="icon-container">
+              {% include "partials/pfas-free.html" %}
+            </span>
           {% endif %}
         </h3>
         <ul class="product-category-list flow" role="list">

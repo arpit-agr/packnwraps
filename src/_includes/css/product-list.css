@@ -33,11 +33,15 @@
 	position: relative;
 }
 
+.product-materials-list .pfas-free {
+	block-size: 1em;
+	inline-size: auto;
+	vertical-align: middle;
+}
+
 .product-materials-list .underline-illustration {
 	position: absolute;
-	inset-block-start: calc(
-		100% - (var(--step-3) * var(--heading-line-height) * 0.0625)
-	);
+	inset-block-start: 100%;
 	inset-inline-start: 0;
 	inline-size: 100%;
 	block-size: var(--space-3xs-2xs);
