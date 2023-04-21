@@ -1,68 +1,14 @@
-/* :root {
-	--shadow-color: var(--primary-hue) 3% 15%;
-	--shadow-strength: 1%;
-	--shadow-1: 0 1px 2px -1px hsl(var(--shadow-color) /
-				calc(var(--shadow-strength) + 9%));
-	--shadow-2: 0 3px 5px -2px hsl(var(--shadow-color) /
-					calc(var(--shadow-strength) + 3%)),
-		0 7px 14px -5px hsl(var(--shadow-color) / calc(var(--shadow-strength) + 5%));
-}
-
-#hero {
-	display: grid;
-	grid-template-columns: 1fr;
-	align-items: center;
-	justify-content: space-between;
-	gap: var(--gutter);
-
-	overflow: hidden;
-	border-radius: var(--space-2xs);
-	background-color: var(--body-bg-color);
-}
-
-@media (min-width: 40rem) {
-	#hero {
-		grid-template-columns: 1fr 25vw;
-	}
-}
-
-#hero h1 {
-	font-size: var(--space-xl-5xl);
-	padding: var(--gutter);
-	padding: var(--space-s-l);
-}
-
-#hero img {
-	place-self: center;
-	inline-size: auto;
-	block-size: 50vh;
-	object-fit: cover;
-	object-position: left;
-} */
-
 #hero {
 	--stack-horizontal-alignment: center;
 	--stack-vertical-alignment: space-between;
-	--stack-gap: var(--space-7xl);
-
+	--stack-gap: var(--space-5xl-xl);
 	--border-width: var(--space-4xs);
 
-	block-size: min(
-		calc(
-			var(--max-vw-height) - var(--header-height) - var(--main-padding) +
-				var(--border-width)
-		),
-		54rem
+	block-size: calc(
+		var(--max-vw-height) - var(--header-height) - var(--main-padding) +
+			var(--border-width)
 	);
-	border-image: linear-gradient(
-			to right,
-			transparent,
-			var(--accent-darkest),
-			transparent
-		)
-		1 / 1 / 0 stretch;
-	border-width: 0 0 var(--border-width) 0;
-	border-style: solid;
+	max-block-size: 54rem;
 	overflow: visible clip;
 }
 
@@ -106,55 +52,9 @@
 	}
 }
 
-#hero .content:after {
-	content: "";
-	position: absolute;
-	inset-block-start: 100%;
-	inline-size: var(--space-4xs);
-	block-size: 100%;
-	z-index: -1;
-	background-image: linear-gradient(
-		to bottom,
-		transparent,
-		var(--accent-darkest),
-		transparent
-	);
-}
-
 #hero img {
-	inline-size: 100vw;
-	max-inline-size: 1000px;
+	max-inline-size: calc(100% + (2 * var(--gutter)));
 	block-size: 100%;
-	/* TODO: do we need this max block size declaration? */
-	max-block-size: min(66vh, 640px);
 	object-fit: cover;
 	object-position: top;
-	/* filter: drop-shadow(1px 1px 0px black); */
 }
-
-/* #hero .desc {
-	position: relative;
-}
-
-#hero .desc:before,
-#hero .desc:after {
-	content: "";
-	position: absolute;
-	inset-block-start: 0;
-
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' class='arrow-1-illustration arrow-illustration svg-illustration' viewBox='0 0 68 47'%3E%3Cpath d='M63.91 42.93C48.63 19.28 30.7 12 5.16 13.35' class='arrow-1-path arrow-body' pathLength='1' style='stroke-dashoffset:1.1;fill:none;stroke:%230ccf5d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px'/%3E%3Cpath d='M13.67 4.56c-4 4.25-8.52 8.49-8.52 9.05S16.67 21.79 18.91 24' class='arrow-1-path arrow-head' pathLength='1' style='stroke-dashoffset:1.1;fill:none;stroke:%230ccf5d;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px'/%3E%3C/svg%3E");
-	inline-size: 80px;
-	block-size: 80px;
-	background-repeat: no-repeat;
-	rotate: 90deg;
-}
-
-#hero .desc::before {
-	inset-inline-end: 100%;
-	scale: -1 -1;
-}
-
-#hero .desc:after {
-	inset-inline-start: 100%;
-	scale: -1 1;
-} */

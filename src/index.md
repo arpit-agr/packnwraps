@@ -1,6 +1,7 @@
 ---
 title: "Food service disposables & packaging products"
 subtitle: "We take pride in delivering quality products with complete adherence to international industry&nbsp;standards."
+featuredImage: "group9-pxl.png"
 about:
   heading: "About Us"
   content:
@@ -45,7 +46,7 @@ products:
             - "Dinner"
         - title: "Cups (8 to 20oz)"
     - title: "Plastic"
-      image: "plastic.webp"
+      image: "plastic-cups.png"
       category:
         - title: "PP & Coex Cups"
         - title: "PET Cups & Lids"
@@ -59,7 +60,7 @@ products:
         - title: "T-shirt Bags/Thank you Bags"
         - title: "Soft Loop Handle Shopping Bags"
     - title: "Bagasse"
-      image: "bagasse.webp"
+      image: "bagasse.jpg"
       specialText: "PFAS free"
       category:
         - title: "Plates"
@@ -67,7 +68,7 @@ products:
         - title: "Clamshells"
         - title: "Bowls"
     - title: "Aluminum"
-      image: "aluminum.webp"
+      image: "aluminum-foil.jpg"
       category:
         - title: "9” & 12” Pop-up Sheets"
           type:
