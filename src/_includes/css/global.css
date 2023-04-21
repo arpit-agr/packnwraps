@@ -8,7 +8,7 @@
 	--header-height: calc(
 		(2 * var(--nav-link-padding)) + (1em * var(--body-line-height))
 	);
-	--main-padding: var(--space-l-5xl);
+	--main-padding: var(--space-xl-5xl);
 	--section-gap: var(--space-3xl-4xl);
 	--card-padding: var(--space-l);
 
