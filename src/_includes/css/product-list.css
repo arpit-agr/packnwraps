@@ -62,7 +62,6 @@
 
 .product-materials-list img {
 	max-block-size: 360px;
-	aspect-ratio: 4/3;
 	object-fit: cover;
 	object-position: top;
 	mix-blend-mode: darken;
@@ -71,12 +70,11 @@
 @media (min-width: 70rem) {
 	.product-materials-list img {
 		position: absolute;
-		inset-block-start: var(--card-padding);
+		inset-block-start: 0;
 		inset-inline-end: 0;
 		max-block-size: unset;
 		block-size: 100%;
-		aspect-ratio: unset;
-		object-position: top left;
+		object-position: bottom left;
 
 		inline-size: 280px;
 	}
@@ -86,12 +84,11 @@
 	@container (min-width: 34rem) {
 		.product-materials-list img {
 			position: absolute;
-			inset-block-start: var(--card-padding);
+			inset-block-start: 0;
 			inset-inline-end: 0;
 			max-block-size: unset;
 			block-size: 100%;
-			aspect-ratio: unset;
-			object-position: top left;
+			object-position: bottom left;
 
 			inline-size: 50cqw;
 		}
@@ -111,6 +108,10 @@
 /* .product-category-list > li {
 	list-style-position: outside;
 } */
+
+.product-category-list > li {
+	display: flex;
+}
 
 @supports selector(:has(+ *)) {
 	.product-category-list li:has(> details) {
