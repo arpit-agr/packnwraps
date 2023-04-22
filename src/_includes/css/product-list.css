@@ -67,6 +67,9 @@
 	mix-blend-mode: darken;
 }
 
+/* duplicate each declaration in this rule 
+in the support query below as well
+because the media query range is not similar  */
 @media (min-width: 70rem) {
 	.product-materials-list img {
 		position: absolute;
@@ -78,8 +81,15 @@
 
 		inline-size: 280px;
 	}
+
+	/* the CSS custom property is being set by JS  */
+	/* Without JS, the declaration the resulting value would be invalid at computed value time (IACVT)  */
+	.has-js .product-materials-list img {
+		max-block-size: calc(var(--max-height) * 1px);
+	}
 }
 
+/* same as the rule above */
 @supports (max-width: 50cqw) {
 	@container (min-width: 34rem) {
 		.product-materials-list img {
@@ -91,6 +101,12 @@
 			object-position: bottom left;
 
 			inline-size: 50cqw;
+		}
+
+		/* the CSS custom property is being set by JS  */
+		/* Without JS, the declaration the resulting value would be invalid at computed value time (IACVT)  */
+		.has-js .product-materials-list img {
+			max-block-size: calc(var(--max-height) * 1px);
 		}
 	}
 }
