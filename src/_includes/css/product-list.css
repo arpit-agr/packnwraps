@@ -17,8 +17,19 @@
 	transition: all 400ms ease;
 }
 
-/* .product-materials-list > li:hover {
-	box-shadow: inset 0 0 calc(var(--card-padding) * 0.25) var(--accent);
+/* if any card is hovered reduce the opacity of the others */
+/* The primary input mechanism can conveniently hover over elements. */
+/* @supports selector(:has(+ *)) {
+	@media (hover: hover) {
+		.product-materials-list > li {
+			transition: all 300ms ease;
+		}
+
+		.product-materials-list:has(> li:hover) > li:not(:hover) {
+			opacity: 0.5;
+			filter: blur(1px);
+		}
+	}
 } */
 
 .product-materials-list .content {
@@ -37,6 +48,7 @@
 	block-size: 1em;
 	inline-size: auto;
 	vertical-align: middle;
+	rotate: -1deg;
 }
 
 .product-materials-list .underline-illustration {
@@ -141,13 +153,15 @@
 	list-style: none;
 	cursor: pointer;
 	border-radius: var(--space-4xs);
+	outline: var(--outline-width) solid transparent;
+	outline-offset: var(--outline-offset);
+	transition: all 300ms ease;
 }
 
 .product-category-list summary:hover,
 .product-category-list summary:focus-visible {
 	color: var(--accent-dark);
-	outline: var(--outline-width) solid var(--outline-color);
-	outline-offset: var(--outline-offset);
+	outline-color: var(--outline-color);
 }
 
 .product-category-list summary::before {
