@@ -18,6 +18,14 @@ module.exports = function (eleventyConfig) {
 	// eleventyConfig.addWatchTarget('./src/scripts/');
 
 	//Filter
+	eleventyConfig.addFilter("addNbsp", (str) => {
+		if (!str) {
+			return;
+		}
+		let title = str.replace(/((.*)\s(.*))$/g, "$2&nbsp;$3");
+		title = title.replace(/"(.*)"/g, '\\"$1\\"');
+		return title;
+	});
 	eleventyConfig.addFilter("cssmin", function (code) {
 		if (process.env.NODE_ENV === "production") {
 			return new CleanCSS({}).minify(code).styles;

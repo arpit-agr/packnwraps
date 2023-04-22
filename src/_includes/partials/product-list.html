@@ -19,7 +19,7 @@
               <li>
                 <details>
                   <summary>
-                    {{ item.title }}
+                    {{ item.title | addNbsp | safe }}
                   </summary>
                   <ul class="product-subtype-list flow">
                     {% for item in item.type %}
@@ -29,7 +29,7 @@
                 </details>
               </li>
             {% else %}
-              <li>{{ item.title }}</li>
+              <li>{{ item.title | addNbsp | safe }}</li>
             {% endif %}
           {% endfor %}
         </ul>
