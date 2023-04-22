@@ -65,7 +65,7 @@ header a:where(:hover, :focus-visible) .underline-illustration .underline-path {
 	block-size: var(--logo-height);
 	inline-size: auto;
 	/* TODO: used a magic number to fix the alignment */
-	translate: 0 4px;
+	/* translate: 0 4px; */
 }
 
 @media (max-width: 23rem) {
@@ -88,7 +88,7 @@ header a:where(:hover, :focus-visible) .underline-illustration .underline-path {
 	}
 }
 
-header[data-sticky]:after {
+header:after {
 	content: "";
 	position: absolute;
 	inset-block-start: var(--header-height);
@@ -96,6 +96,10 @@ header[data-sticky]:after {
 	inline-size: calc(100% + var(--gutter) + var(--gutter));
 	block-size: 1px;
 
-	background-color: var(--body-bg-color);
-	box-shadow: var(--custom-shadow);
+	background-color: transparent;
+	transition: background-color 300ms ease;
+}
+
+header[data-sticky]:after {
+	background-color: hsl(0deg 0% 0% / 8%);
 }
