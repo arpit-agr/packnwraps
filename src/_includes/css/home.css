@@ -1,5 +1,6 @@
 .desc {
-	--text-line-length: 46ch;
+	/* --text-line-length: 46ch; */
+	--text-line-length: 49ch;
 }
 
 .icon-container {

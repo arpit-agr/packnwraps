@@ -10,7 +10,7 @@ about:
     - "As a constantly evolving manufacturer, we keep up with the latest trends and innovative concepts to expand our product line. We are committed to providing the most exceptional customer service to our clients."
 products:
   heading: "Our Products"
-  description: "We offer customized programs, consolidation programs, and private labeling to meet the unique needs of our customers."
+  description: "We also offer customized programs, consolidation programs, and private labeling to meet the unique needs of our customers."
   list:
     - title: "Paper"
       specialText: "PFAS free"

@@ -64,8 +64,9 @@ header a:where(:hover, :focus-visible) .underline-illustration .underline-path {
 .logo {
 	block-size: var(--logo-height);
 	inline-size: auto;
+	vertical-align: middle;
 	/* TODO: used a magic number to fix the alignment */
-	/* translate: 0 4px; */
+	translate: 0 3px;
 }
 
 @media (max-width: 23rem) {
