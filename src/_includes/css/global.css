@@ -1,7 +1,6 @@
 :root {
 	--gutter: var(--space-s-m);
-	/* TODO: what happens if the max width is just 80rem */
-	--max-inline-size: min(80rem, 100vw);
+	--max-inline-size: min(80rem, calc(100vw - (2 * var(--gutter))));
 	--max-vw-height: 100vh;
 	--logo-height: var(--space-m-xl);
 	--nav-link-padding: var(--space-xs-s);
@@ -9,7 +8,7 @@
 		(2 * var(--nav-link-padding)) + (1em * var(--body-line-height))
 	);
 	--main-padding: var(--space-xl-5xl);
-	--section-gap: var(--space-3xl-4xl);
+	--section-gap: var(--space-4xl-5xl);
 	--card-padding: var(--space-l);
 
 	--heading-text-color: var(--green-100);
@@ -21,6 +20,9 @@
 	--accent-dark: var(--green-200);
 	--accent: var(--green-300);
 	--accent-opacity: var(--green-opacity);
+	--separator: hsl(0deg 0% 0% / 8%);
+	/* --scrollbar-track-color: var(--body-primary-color);
+	--scrollbar-thumb-color: var(--gray-500); */
 
 	--font-plain: "InterVariable", Inter-fallback, system-ui, sans-serif;
 	--font-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco,

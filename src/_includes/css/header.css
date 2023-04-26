@@ -102,5 +102,5 @@ header:after {
 }
 
 header[data-sticky]:after {
-	background-color: hsl(0deg 0% 0% / 8%);
+	background-color: var(--separator);
 }

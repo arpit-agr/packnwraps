@@ -2,7 +2,7 @@
 	inline-size: 100%;
 	max-inline-size: var(--max-inline-size);
 	margin-inline: auto;
-	padding-inline: var(--gutter);
+	/* padding-inline: var(--gutter); */
 	position: relative;
 }
 
