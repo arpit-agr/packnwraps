@@ -12,7 +12,6 @@
 	outline: none;
 }
 
-/* TODO: style this button */
 .skip-to-main {
 	display: block;
 	inset-block-start: var(--gutter);
@@ -23,11 +22,10 @@
 	transition: transform 0.15s ease;
 	z-index: 999;
 
-	padding: var(--space-3xs) var(--space-2xs);
-	background-color: var(--accent-darkest);
-	color: var(--white);
-	box-shadow: var(--shadow-5);
+	padding: var(--button-padding);
 	text-decoration: none;
+	border: var(--outline-width) dotted var(--accent-dark);
+	border-radius: var(--space-2xs);
 }
 
 .skip-to-main:focus {

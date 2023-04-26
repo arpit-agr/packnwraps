@@ -10,6 +10,9 @@
 	--main-padding: var(--space-xl-5xl);
 	--section-gap: var(--space-4xl-5xl);
 	--card-padding: var(--space-l);
+	--button-padding-block: var(--space-3xs);
+	--button-padding-inline: var(--space-2xs);
+	--button-padding: var(--button-padding-block) var(--button-padding-inline);
 
 	--heading-text-color: var(--green-100);
 	--body-primary-color: var(--gray-200);
@@ -103,20 +106,16 @@ a:where(:hover, :focus-visible) {
 	color: var(--accent-dark);
 }
 
-/* TODO: check support for font-variant-caps */
 em {
 	color: var(--accent-dark);
-	font-style: normal;
-	font-weight: 400;
-	font-variant-caps: all-small-caps;
-	/* line-height: 1; */
+	font-weight: 500;
 }
 
 summary {
 	display: flex;
 	align-items: baseline;
 	max-inline-size: max-content;
-	/* FIXME: magic number */
+	/* magic number to align the before psuedo content perfectly */
 	gap: 0 var(--space-xs);
 	list-style: none;
 	cursor: pointer;
@@ -128,6 +127,8 @@ summary {
 
 summary::before {
 	content: "▾";
+	content: "▾"/"";
+	alt: "";
 	display: block;
 	color: var(--accent);
 	line-height: 1;

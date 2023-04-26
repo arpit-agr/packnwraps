@@ -4,11 +4,11 @@
 	--stack-gap: var(--space-5xl-xl);
 	--border-width: var(--space-4xs);
 
-	block-size: calc(
+	/* block-size: calc(
 		var(--max-vw-height) - var(--header-height) - var(--main-padding) +
 			var(--border-width)
 	);
-	max-block-size: 54rem;
+	max-block-size: 54rem; */
 	overflow: visible clip;
 }
 
@@ -61,6 +61,7 @@
 #hero picture img {
 	inline-size: 100%;
 	block-size: 100%;
+	min-block-size: 320px;
 	object-fit: cover;
 	object-position: top;
 }

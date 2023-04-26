@@ -3,7 +3,7 @@ title: "Food service disposables & packaging products"
 subtitle: "We take pride in delivering quality products with complete adherence to international industry&nbsp;standards."
 featuredImage:
   source: "group9-pxl.png"
-  alt: "TKTK"
+  alt: ""
   sizes: "100vw"
   loading: "eager"
   fetchPriority: "high"
@@ -112,5 +112,3 @@ contact:
 
 layout: "layouts/home.html"
 ---
-
-<!-- TODO: add alt for images -->
