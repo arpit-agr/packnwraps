@@ -34,6 +34,13 @@ module.exports = function (eleventyConfig) {
 		}
 	});
 
+	// Collections
+	eleventyConfig.addCollection("gallery", function (collectionApi) {
+		return collectionApi.getFilteredByGlob("./src/gallery/*.md").sort(() => {
+			return 0.5 - Math.random();
+		});
+	});
+
 	//Transforms
 	eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
 		// Eleventy 1.0+: use this.inputPath and this.outputPath instead
