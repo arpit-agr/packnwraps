@@ -52,8 +52,14 @@
 	}
 }
 
-#hero img {
-	max-inline-size: calc(100% + (2 * var(--gutter)));
+#hero picture {
+	inline-size: calc(100% + (2 * var(--gutter)));
+	block-size: 100%;
+	max-inline-size: 100vw;
+}
+
+#hero picture img {
+	inline-size: 100%;
 	block-size: 100%;
 	object-fit: cover;
 	object-position: top;

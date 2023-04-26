@@ -1,9 +1,14 @@
+{%- set source = "src/images/" + featuredImage.source -%}
+{%- set alt = featuredImage.alt -%}
+{%- set sizes = featuredImage.sizes -%}
+{%- set loading = featuredImage.loading -%}
+{%- set fetchPriority = featuredImage.fetchPriority -%}
+
 <section id="hero" class="stack">
   <div class="content stack">
     <h1>{{ title | title }}</h1>
     <p class="desc">{{ subtitle | safe }}</p>
   </div>
-  {# TODO: use 11ty image plugin #}
   {# TODO: check for a11y #}
-  <img src="/images/{{ featuredImage }}" alt="" width="2559" height="2424">
+  {% image source , alt, sizes, loading, fetchPriority %}
 </section>

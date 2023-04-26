@@ -1,7 +1,12 @@
 ---
 title: "Food service disposables & packaging products"
 subtitle: "We take pride in delivering quality products with complete adherence to international industry&nbsp;standards."
-featuredImage: "group9-pxl.png"
+featuredImage:
+  source: "group9-pxl.png"
+  alt: "TKTK"
+  sizes: "100vw"
+  loading: "eager"
+  fetchPriority: "high"
 about:
   heading: "About Us"
   content:
@@ -14,7 +19,9 @@ products:
   list:
     - title: "Paper"
       specialText: "PFAS free"
-      image: "cardboard-packaging-large.webp"
+      image:
+        source: "cardboard-packaging-large.webp"
+        alt: ""
       category:
         - title: "Bags"
           type:
@@ -46,7 +53,9 @@ products:
             - "Dinner"
         - title: "Cups (8 to 20oz)"
     - title: "Plastic"
-      image: "plastic-cups.png"
+      image:
+        source: "plastic-cups.png"
+        alt: ""
       category:
         - title: "PP & Coex Cups"
         - title: "PET Cups & Lids"
@@ -60,7 +69,9 @@ products:
         - title: "T-shirt Bags/Thank you Bags"
         - title: "Soft Loop Handle Shopping Bags"
     - title: "Bagasse"
-      image: "bagasse.jpg"
+      image:
+        source: "bagasse.jpg"
+        alt: ""
       specialText: "PFAS free"
       category:
         - title: "Plates"
@@ -68,7 +79,9 @@ products:
         - title: "Clamshells"
         - title: "Bowls"
     - title: "Aluminum"
-      image: "aluminum-foil.jpg"
+      image:
+        source: "aluminum-foil.jpg"
+        alt: ""
       category:
         - title: "9” & 12” Pop-up Sheets"
           type:
@@ -99,3 +112,5 @@ contact:
 
 layout: "layouts/home.html"
 ---
+
+<!-- TODO: add alt for images -->

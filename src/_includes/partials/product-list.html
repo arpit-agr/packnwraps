@@ -34,9 +34,13 @@
           {% endfor %}
         </ul>
       </div>
-      {# TODO: use 11ty image plugin #}
       {# TODO: check for a11y #}
-      <img src="/images/{{ product.image }}" alt="">
+      {%- set source = "src/images/" + product.image.source -%}
+      {%- set alt = product.image.alt -%}
+      {%- set sizes = "(min-width: 70rem) 25vw, (min-width: 36.1875rem) 50vw, 100vw" -%}
+      {%- set loading = "lazy" -%}
+      {%- set fetchPriority = "auto" -%}
+      {% image source , alt, sizes, loading, fetchPriority %}
     </li>
   {% endfor %}
 </ul>
