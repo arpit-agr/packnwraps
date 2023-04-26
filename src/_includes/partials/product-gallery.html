@@ -1,0 +1,15 @@
+<details class="product-gallery flow">
+  <summary>View Product Gallery</summary>
+  <ul class="gallery-list flow" role="list">
+    {%- for image in collections.gallery -%}
+      <li>
+        {%- set source = "src/images/gallery/" + image.data.source -%}
+        {%- set alt = image.data.alt -%}
+        {%- set sizes = "(min-width: 64rem) 20vw, (min-width: 40rem) 25vw, 50vw" -%}
+        {%- set loading = "lazy" -%}
+        {%- set fetchPriority = "low" -%}
+        {% image source , alt, sizes, loading, fetchPriority %}
+      </li>
+    {%- endfor -%}
+  </ul>
+</details>
