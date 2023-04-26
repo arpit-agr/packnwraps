@@ -1,3 +1,4 @@
+const imageShortcode = require("./src/_11ty/image.js");
 const directoryOutputPlugin = require("@11ty/eleventy-plugin-directory-output");
 const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
@@ -40,6 +41,9 @@ module.exports = function (eleventyConfig) {
 			return 0.5 - Math.random();
 		});
 	});
+
+	//SHORTCODE
+	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
 	//Transforms
 	eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
