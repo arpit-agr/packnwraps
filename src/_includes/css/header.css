@@ -98,7 +98,7 @@ header:after {
 	block-size: 1px;
 
 	background-color: transparent;
-	transition: background-color 300ms ease;
+	transition: background-color 400ms ease;
 }
 
 header[data-sticky]:after {

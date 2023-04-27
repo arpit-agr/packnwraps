@@ -3,9 +3,20 @@
 	--text-line-length: 49ch;
 }
 
-.icon-container {
-	vertical-align: middle;
-	margin-inline-end: var(--space-3xs);
+@media (prefers-reduced-motion: no-preference) {
+	.has-js .fade-in {
+		opacity: 0;
+	}
+
+	.has-js .fade-in[data-state="hidden"] {
+		transform: translateY(2ex);
+	}
+
+	.has-js .fade-in[data-state="visible"] {
+		opacity: 1;
+		transition: transform 600ms cubic-bezier(0.42, 0, 0.32, 1.17),
+			opacity 900ms cubic-bezier(0.42, 0, 0.32, 1.17) 300ms;
+	}
 }
 
 :where([id]:not(main)) {

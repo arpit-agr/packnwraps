@@ -16,21 +16,6 @@
 	transition: all 400ms ease;
 }
 
-/* if any card is hovered reduce the opacity of the others */
-/* The primary input mechanism can conveniently hover over elements. */
-/* @supports selector(:has(+ *)) {
-	@media (hover: hover) {
-		.product-materials-list > li {
-			transition: all 300ms ease;
-		}
-
-		.product-materials-list:has(> li:hover) > li:not(:hover) {
-			opacity: 0.5;
-			filter: blur(1px);
-		}
-	}
-} */
-
 .product-materials-list .content {
 	padding: var(--card-padding);
 }
@@ -144,7 +129,7 @@ because the media query range is not similar  */
 		background-repeat: no-repeat;
 		background-position: center;
 		margin-inline-end: var(--space-2xs);
-		vertical-align: top;
+		/* vertical-align: top; */
 	}
 }
 

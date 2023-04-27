@@ -1,12 +1,12 @@
 <section id="about" class="flow">
-  <h2>{{ about.heading }}</h2>
+  <h2 class="fade-in">{{ about.heading }}</h2>
   <div class="content flow disclosure-widget" id="about-content">
     {% for item in about.content %}
-      <p>{{ item }}</p>
+      <p class="fade-in">{{ item }}</p>
     {% endfor %}
   </div>
   <button
-    class="read-more"
+    class="read-more fade-in"
     aria-expanded="false"
     aria-controls="about-content"
   >

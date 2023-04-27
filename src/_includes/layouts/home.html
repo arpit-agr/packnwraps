@@ -8,8 +8,45 @@
     {%- include "partials/contact-section.html" -%}
   </div>
   {{ content | safe }}
+{%- endblock -%}
+
+{%- block bodyScripts -%}
+  <script>
+    (function () {
+      if (!'IntersectionObserver' in window) {
+        return;
+      }
+      const elements = document.querySelectorAll('.fade-in');
+
+      let observer = new IntersectionObserver(
+        (changes, observer) => {
+          let timeout = 0;
+
+          changes.forEach(change => {
+            if (change.intersectionRatio > 0) {
+              timeout += 100;
+              setTimeout(() => {
+                change.target.setAttribute('data-state', 'visible');
+              }, timeout);
+            }
+          });
+        },
+        {
+          root: null,
+          // root margin is dervied from var(--space-xl)
+          rootMargin: '24px',
+          threshold: 0
+        }
+      );
+
+      elements.forEach(element => {
+        element.setAttribute('data-state', 'hidden');
+
+        observer.observe(element);
+      });
+    })();
+  </script>
   
-  {# TODO: defer scripts? #}
   <script>
     const header = document.querySelector(".site-head");
     const intercept = document.querySelector(".skip-to-main");
@@ -21,35 +58,7 @@
     observer.observe(intercept);
   </script>
 
-  {# TODO: defer scripts? #}
-  <script>
-    function toggleDisclosure() {
-      if (this.getAttribute("aria-expanded") == "false") {
-        this.innerText = " Read Less";
-        this.setAttribute("aria-expanded", "true");
-        this.previousElementSibling.setAttribute('data-state', 'visible');
-      } 
-      else {
-        this.innerText = " Read More";
-        this.setAttribute("aria-expanded", "false");
-        this.previousElementSibling.setAttribute('data-state', 'hidden');
-      }
-    }
-    const disclosureWidget = document.querySelectorAll('.disclosure-widget');
-    const readMoreButton = document.querySelectorAll('.read-more');
+  <script src="/scripts/toggle-disclosure.js" defer async></script>
+  <script src="/scripts/set-height.js" defer async></script>
 
-    disclosureWidget.forEach( el => el.setAttribute('data-state', 'hidden'));
-    readMoreButton.forEach( el => el.addEventListener("click", toggleDisclosure));
-  </script>
-  <script>
-    const parentElement = document.querySelector(".product-materials-list");
-    const childrenElements = parentElement.children;
-    for (let child of childrenElements) {
-      const childHeight = child.clientHeight;
-      const targetElement = child.querySelector("img");
-      if (targetElement) {
-        targetElement.style.setProperty("--max-height", childHeight);
-      }
-    }
-  </script>
 {%- endblock -%}

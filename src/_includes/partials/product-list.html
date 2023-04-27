@@ -1,6 +1,6 @@
 <ul class="product-materials-list grid" role="list">
   {% for product in products.list %}
-    <li class="stack">
+    <li class="stack fade-in">
       <div class="content flow">
         <h3 class="cluster">
           <span>
@@ -8,9 +8,7 @@
             {% include "partials/underline.html" %}
           </span>
           {% if product.specialText %}
-            <span class="icon-container">
-              {% include "partials/pfas-free.html" %}
-            </span>
+            {% include "partials/pfas-free.html" %}
           {% endif %}
         </h3>
         <ul class="product-category-list flow" role="list">

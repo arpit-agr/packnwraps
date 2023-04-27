@@ -52,13 +52,13 @@
 	}
 }
 
-#hero picture {
+#hero .featured-img {
 	inline-size: calc(100% + (2 * var(--gutter)));
 	block-size: 100%;
 	max-inline-size: 100vw;
 }
 
-#hero picture img {
+#hero img {
 	inline-size: 100%;
 	block-size: 100%;
 	min-block-size: 320px;

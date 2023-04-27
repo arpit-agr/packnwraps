@@ -6,8 +6,10 @@
 
 <section id="hero" class="stack">
   <div class="content stack">
-    <h1>{{ title | title }}</h1>
-    <p class="desc">{{ subtitle | safe }}</p>
+    <h1 class="fade-in">{{ title | title }}</h1>
+    <p class="desc fade-in">{{ subtitle | safe }}</p>
   </div>
-  {% image source , alt, sizes, loading, fetchPriority %}
+  <div class="featured-img fade-in">
+    {% image source , alt, sizes, loading, fetchPriority %}
+  </div>
 </section>

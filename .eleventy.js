@@ -10,13 +10,9 @@ module.exports = function (eleventyConfig) {
 	//Passthrough copy
 	eleventyConfig.addPassthroughCopy("./src/fonts");
 	eleventyConfig.addPassthroughCopy("./src/images");
-	// eleventyConfig.addPassthroughCopy("./src/scripts");
+	eleventyConfig.addPassthroughCopy("./src/scripts");
 	eleventyConfig.addPassthroughCopy({ "./src/favicons": "/" });
 	eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
-
-	//Watch target
-	// eleventyConfig.addWatchTarget("./src/_includes/css/");
-	// eleventyConfig.addWatchTarget('./src/scripts/');
 
 	//Filter
 	eleventyConfig.addFilter("addNbsp", (str) => {
