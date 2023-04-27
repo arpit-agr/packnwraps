@@ -27,7 +27,7 @@
 	/* --scrollbar-track-color: var(--body-primary-color);
 	--scrollbar-thumb-color: var(--gray-500); */
 
-	--font-plain: "InterVariable", Inter-fallback, system-ui, sans-serif;
+	--font-plain: "InterVariable", "Inter-fallback", system-ui, sans-serif;
 	--font-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco,
 		Consolas, "Liberation Mono", "Courier New", monospace;
 	--body-line-height: 1.5;
