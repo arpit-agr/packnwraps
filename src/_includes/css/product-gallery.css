@@ -1,6 +1,7 @@
 .product-gallery {
 	--flow-space: var(--space-xl);
 	position: relative;
+	display: block;
 }
 
 .product-gallery:after {
