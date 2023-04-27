@@ -37,6 +37,9 @@ module.exports = function (eleventyConfig) {
 			return 0.5 - Math.random();
 		});
 	});
+	eleventyConfig.addCollection("certificates", function (collectionApi) {
+		return collectionApi.getFilteredByGlob("./src/certificates/*.md");
+	});
 
 	//SHORTCODE
 	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
