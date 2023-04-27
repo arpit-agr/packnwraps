@@ -1,15 +1,14 @@
 <section id="about" class="flow">
   <h2 class="fade-in">{{ about.heading }}</h2>
-  <div class="content flow disclosure-widget" id="about-content">
-    {% for item in about.content %}
-      <p class="fade-in">{{ item }}</p>
-    {% endfor %}
-  </div>
-  <button
+  {% for item in about.content %}
+    <p class="fade-in">{{ item }}</p>
+  {% endfor %}
+  {# <button
     class="read-more fade-in"
     aria-expanded="false"
     aria-controls="about-content"
   >
     Read More <span class="vh">{{ about.heading }}</span>
-  </button>
+  </button> #}
+  {%- include "partials/certificates.html" -%}
 </section>

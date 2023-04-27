@@ -1,0 +1,17 @@
+<h3 class="vh">Certificates</h3>
+<ul class="certificate-list cluster" role="list">
+  {%- for image in collections.certificates -%}
+    <li>
+      {% if image.data.source %}  
+        {%- set source = "src/images/certificates/" + image.data.source -%}
+        {%- set alt = image.data.alt -%}
+        {%- set sizes = "80px" -%}
+        {%- set loading = "lazy" -%}
+        {%- set fetchPriority = "low" -%}
+        {% image source , alt, sizes, loading, fetchPriority %}
+      {% else %}
+        {{ image.templateContent | safe }}
+      {% endif %}
+    </li>
+  {%- endfor -%}
+</ul>

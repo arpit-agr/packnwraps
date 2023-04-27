@@ -1,0 +1,21 @@
+.certificate-list {
+	--flow-space: var(--space-l-xl);
+	--cluster-horizontal-alignment: start;
+	--cluster-gap: var(--space-2xs);
+}
+
+.certificate-list :where(img, svg) {
+	width: var(--space-3xl-5xl);
+	height: var(--space-3xl-5xl);
+	object-fit: contain;
+	filter: grayscale(1);
+	transition: filter 200ms ease;
+}
+
+.certificate-list img {
+	mix-blend-mode: multiply;
+}
+
+.certificate-list img:hover {
+	filter: grayscale(0);
+}

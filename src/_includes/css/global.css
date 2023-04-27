@@ -152,3 +152,7 @@ summary::marker {
 	content: "";
 	display: none;
 }
+
+hr {
+	border-color: var(--separator);
+}
