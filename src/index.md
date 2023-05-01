@@ -1,8 +1,8 @@
 ---
 title: "Food service disposables & packaging products"
-subtitle: "We take pride in manufacturing quality products with complete adherence to international industry&nbsp;standards."
+subtitle: "We manufacture quality products with complete adherence to international industry&nbsp;standards."
 featuredImage:
-  source: "group9-pxl.png"
+  source: "http://via.placeholder.com/457x214"
   alt: ""
   sizes: "100vw"
   loading: "eager"
@@ -15,7 +15,105 @@ about:
     - "As a constantly evolving manufacturer, we keep up with the latest trends and innovative concepts to expand our product line. We are committed to providing the most exceptional customer service to our clients."
 products:
   heading: "Our Products"
-  description: "We also offer customized programs, consolidation programs, and private labeling to meet the unique needs of our customers."
+  description: "We offer customized programs, consolidation programs, and private labeling to meet the unique needs of our customers."
+  category:
+    - title: "Paper Packaging"
+      specialText: "PFAS free"
+      items:
+        - name: "Bags"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Mailers"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Containers"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Clamshells"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Wraps / sheets"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+    - title: "Paper Tableware"
+      specialText: "PFAS free"
+      items:
+        - name: "Plates"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Cups"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Bowls"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Napkins"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+    - title: "Plastic Packaging"
+      items:
+        - name: "Bags"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Mailers"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Portion Cups"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "T-shirt Bags"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Food Storage Bags"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+    - title: "Plastic Tableware"
+      items:
+        - name: "Plates"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Cups"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Bowls"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+    - title: "Bagasse Tableware"
+      specialText: "PFAS free"
+      items:
+        - name: "Plates"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Bowls"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Trays"
+          image:
+            source: "2412295.jpg"
+            alt: ""
+        - name: "Clamshells"
+          image:
+            source: "2412295.jpg"
+            alt: ""
   list:
     - title: "Paper"
       specialText: "PFAS free"
@@ -108,7 +206,7 @@ contact:
   heading: "Contact Us"
   description: "We are excited to collaborate with your business and look forward to building a long-term partnership with you."
   email: "sales@packnwraps.com"
-  phone: "+918369175141"
+  phone: "+919137340306"
 
 layout: "layouts/home.html"
 ---
