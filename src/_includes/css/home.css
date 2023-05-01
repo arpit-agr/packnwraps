@@ -21,14 +21,9 @@
 		opacity: 0;
 	}
 
-	.has-js .fade-in[data-state="hidden"] {
-		transform: translateY(2ex);
-	}
-
 	.has-js .fade-in[data-state="visible"] {
 		opacity: 1;
-		transition: transform 600ms cubic-bezier(0.42, 0, 0.32, 1.17),
-			opacity 900ms cubic-bezier(0.42, 0, 0.32, 1.17) 300ms;
+		transition: opacity 900ms cubic-bezier(0.42, 0, 0.32, 1.17);
 	}
 }
 
