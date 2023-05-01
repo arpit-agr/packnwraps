@@ -5,8 +5,8 @@
 }
 
 .certificate-list :where(img, svg) {
-	width: var(--space-3xl-5xl);
-	height: var(--space-3xl-5xl);
+	inline-size: var(--space-3xl-5xl);
+	block-size: var(--space-3xl-5xl);
 	object-fit: contain;
 	filter: grayscale(1);
 	transition: filter 200ms ease;
