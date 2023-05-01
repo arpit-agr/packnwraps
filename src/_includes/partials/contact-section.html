@@ -3,22 +3,26 @@
   <p class="desc fade-in">
     {{ contact.description }}
   </p>
-  <p class="fade-in">
+  <p class="contact-method cluster fade-in">
     <span class="icon-container">
       {% include "partials/mail.html" %}
     </span>
-    Mail:
-    <a href="mailto:{{ contact.email }}">
-      {{ contact.email }}
-    </a>
+    <span>
+      Mail:
+      <a href="mailto:{{ contact.email }}">
+        {{ contact.email }}
+      </a>
+    </span>
   </p>
-  <p class="fade-in">
+  <p class="contact-method cluster fade-in">
     <span class="icon-container">
       {% include "partials/phone.html" %}
     </span>
-    Phone:
-    <a href="tel:{{ contact.phone }}">
-      {{ contact.phone }}
-    </a>
+    <span>
+      Phone:
+      <a href="tel:{{ contact.phone }}">
+        {{ contact.phone }}
+      </a>
+    </span>
   </p>
 </section>

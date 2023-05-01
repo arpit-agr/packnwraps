@@ -1,17 +1,38 @@
-/* magic number at which the product cards below go in vertical orientation  */
-@media (min-width: 36.1875rem) {
-	#products h2 {
-		text-align: center;
-	}
-
-	#products .desc {
-		margin-inline: auto;
-		text-align: center;
-	}
+.products-inner-container {
+	--flow-space: var(--space-xl);
 }
 
 @supports (text-wrap: balance) {
 	#products .desc {
 		text-wrap: balance;
+	}
+}
+
+#products .inquiry {
+	--flow-space: var(--card-padding-block);
+	--cluster-gap: var(--space-2xs);
+	--cluster-vertical-alignment: center;
+
+	--button-bg-color: var(--accent-dark);
+	--button-text-color: var(--card-bg-color);
+
+	position: sticky;
+	inset-block-end: calc(0.5 * var(--card-padding-block));
+
+	margin-inline: auto;
+	max-inline-size: max-content;
+}
+
+@supports selector(:has(+ *)) {
+	#products .inquiry {
+		opacity: 0;
+		transition: opacity 900ms cubic-bezier(0.42, 0, 0.32, 1.17);
+	}
+
+	#products:has(
+			.product-category-list > li:not(:first-child)[data-state="visible"]
+		)
+		.inquiry {
+		opacity: 1;
 	}
 }

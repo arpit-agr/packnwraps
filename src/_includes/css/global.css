@@ -159,3 +159,25 @@ summary::marker {
 hr {
 	border-color: var(--separator);
 }
+
+.btn {
+	padding: var(--button-padding);
+	background-color: var(--button-bg-color, var(--card-bg-color));
+	color: var(--button-text-color, unset);
+	border: var(--outline-width) solid var(--separator);
+	border-radius: var(--space-2xs);
+	text-decoration: none;
+	box-shadow: var(--shadow-3);
+
+	transition: all 200ms ease;
+}
+
+.btn:hover {
+	background-color: var(--card-bg-color);
+	color: unset;
+	border-color: var(--heading-text-color);
+}
+
+img {
+	border-radius: var(--space-3xs);
+}

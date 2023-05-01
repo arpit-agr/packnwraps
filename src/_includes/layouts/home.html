@@ -3,7 +3,8 @@
 {%- block content -%}
   {%- include "partials/hero-section.html" -%}
   {%- include "partials/product-section.html" -%}
-  <div class="grid">
+  {% include "partials/product-gallery.html" %}
+  <div class="about-contact-container grid">
     {%- include "partials/about-section.html" -%}
     {%- include "partials/contact-section.html" -%}
   </div>
@@ -47,7 +48,7 @@
     })();
   </script>
   
-  <script>
+  {# <script>
     const header = document.querySelector(".site-head");
     const intercept = document.querySelector(".skip-to-main");
 
@@ -56,10 +57,10 @@
     });
 
     observer.observe(intercept);
-  </script>
+  </script> #}
 
-  <script src="/scripts/details-utils.js" defer async></script>
-  {# <script src="/scripts/toggle-disclosure.js" defer async></script> #}
-  <script src="/scripts/set-height.js" defer async></script>
+  {# <script src="/scripts/details-utils.js" defer async></script> #}
+  <script src="/scripts/toggle-disclosure.js" defer async></script>
+  {# <script src="/scripts/set-height.js" defer async></script> #}
 
 {%- endblock -%}

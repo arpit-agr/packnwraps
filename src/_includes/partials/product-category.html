@@ -1,0 +1,37 @@
+<ul class="product-category-list fade-in" role="list">
+  {% for category in products.category %}
+    {% if loop.index == 1 %}
+      {%- set loading = "eager" -%}
+      {%- set fetchPriority = "high" -%}
+    {% else %}
+      {%- set loading = "lazy" -%}
+      {%- set fetchPriority = "low" -%}
+    {% endif %}
+    <li class="fade-in">
+      <h3>
+        {{ category.title }}
+        {# <span>
+          {{ category.title }}
+        </span> #}
+        {# <span class="counter">
+          0{{ loop.index }}
+        </span> #}
+      </h3>
+      <ul 
+        class="product-items-list grid" 
+        role="list" 
+      >
+        {% for item in category.items %}
+          <li class="stack">
+            {%- set source = "src/images/gallery/" + item.image.source -%}
+            {# TODO: provide alt #}
+            {%- set alt = item.image.alt -%}
+            {%- set sizes = "(min-width: 64rem) 17vw, (min-width: 40rem) 25vw, 50vw" -%}
+            {% image source , alt, sizes, loading, fetchPriority %}
+            <p>{{ item.name | safe }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
