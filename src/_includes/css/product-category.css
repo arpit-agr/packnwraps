@@ -32,7 +32,7 @@
 	}
 }
 
-/* .product-category-list h3 .counter {
+.product-category-list h3 .counter {
 	display: none;
 	font-size: var(--step--1);
 	letter-spacing: var(--text-letter-spacing);
@@ -59,7 +59,7 @@
 	);
 }
 
-@media (min-width: 33.1875rem) {
+@media (min-width: 40rem) {
 	.product-category-list h3 {
 		display: flex;
 		gap: 1ex;
@@ -75,10 +75,9 @@
 		display: grid;
 		place-items: center;
 	}
-} 
+}
 
-
-.product-category-list .pfas-free {
+/* .product-category-list .pfas-free {
 	block-size: 1em;
 	inline-size: auto;
 	vertical-align: middle;
