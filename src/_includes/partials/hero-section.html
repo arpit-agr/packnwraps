@@ -1,12 +1,12 @@
-{%- set source = "src/images/" + featuredImage.source -%}
+{%- set source = featuredImage.source -%}
 {%- set alt = featuredImage.alt -%}
 {%- set sizes = featuredImage.sizes -%}
 {%- set loading = featuredImage.loading -%}
 {%- set fetchPriority = featuredImage.fetchPriority -%}
 
-<section id="hero" class="stack">
-  <div class="content stack">
-    <h1 class="fade-in">{{ title | title }}</h1>
+<section id="hero">
+  <div class="flow">
+    <h1 class="fade-in">{{ title | title | safe }}</h1>
     <p class="desc fade-in">{{ subtitle | safe }}</p>
   </div>
   <div class="featured-img fade-in">

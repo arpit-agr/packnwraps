@@ -1,28 +1,25 @@
 #hero {
-	--stack-horizontal-alignment: center;
-	--stack-vertical-alignment: space-between;
-	--stack-gap: var(--space-5xl-xl);
-	--border-width: var(--space-4xs);
-
-	/* block-size: calc(
-		var(--max-vw-height) - var(--header-height) - var(--main-padding) +
-			var(--border-width)
-	);
-	max-block-size: 54rem; */
-	overflow: visible clip;
+	display: grid;
+	gap: var(--card-padding);
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr;
 }
 
-#hero .content {
-	--stack-gap: var(--gutter);
-	--stack-horizontal-alignment: center;
-	position: relative;
-	text-align: center;
+@media (min-width: 50.25rem) {
+	#hero {
+		grid-template-columns: 1.73fr 1fr;
+		grid-template-rows: 1fr;
+		align-items: center;
+	}
 }
 
 #hero h1 {
-	/* max-inline-size: 22ch; */
-	font-size: var(--space-2xl-5xl);
+	font-size: var(--space-2xl-4xl);
 	color: var(--red);
+}
+
+#hero p {
+	--text-line-length: 44ch;
 }
 
 @supports (text-wrap: balance) {
@@ -31,37 +28,39 @@
 	}
 }
 
-/* hidden by default because it looks ugly on smaller screens*/
 #hero .desc {
-	display: none;
 	font-size: var(--step-1);
 	color: var(--accent-darkest);
 }
 
-/* @supports (text-wrap: balance) {
-	#hero .desc {
-		text-wrap: balance;
-	}
-} */
+#hero .featured-img {
+	block-size: 100%;
 
-/* we unhide it on larger screens because it works now */
-/* magic number */
-@media (min-width: 27.375rem) {
-	#hero .desc {
-		display: revert;
-	}
+	/* FIXME: magic number */
+	min-block-size: 256px;
+
+	position: relative;
+	border-radius: var(--space-3xs);
 }
 
-#hero .featured-img {
-	inline-size: calc(100% + (2 * var(--gutter)));
+/* TODO: delete once the final image is added */
+#hero .featured-img:after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: var(--gray-300);
+	border-radius: var(--space-3xs);
+}
+
+#hero picture {
 	block-size: 100%;
-	max-inline-size: 100vw;
 }
 
 #hero img {
+	inset-block-start: 0;
+	inset-inline-start: 0;
 	inline-size: 100%;
 	block-size: 100%;
-	min-block-size: 320px;
 	object-fit: cover;
-	object-position: top;
+	border-radius: var(--space-3xs);
 }
