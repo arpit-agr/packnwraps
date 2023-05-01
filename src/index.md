@@ -202,6 +202,9 @@ products:
           type:
             - "Half size"
             - "Full size"
+gallery:
+  heading: "Product Gallery"
+  description: "Take a look at the diverse food service disposables & packaging products that we manufacture and deliver."
 contact:
   heading: "Contact Us"
   description: "We are excited to collaborate with your business and look forward to building a long-term partnership with you."
