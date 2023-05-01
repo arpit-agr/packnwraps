@@ -18,8 +18,13 @@
 	}
 }
 
-:where([id]:not(main)) {
+/* if header was sticky we would need to add the header height as well */
+/* :where([id]:not(main)) {
 	scroll-margin-top: calc((var(--section-gap) / 2) + var(--header-height));
+} */
+
+:where([id]:not(main)) {
+	scroll-margin-top: calc(var(--section-gap) / 2);
 }
 
 /* @media (min-width: 48rem) {
