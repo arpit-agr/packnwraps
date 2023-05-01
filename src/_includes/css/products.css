@@ -24,7 +24,7 @@
 }
 
 @supports selector(:has(+ *)) {
-	#products .inquiry {
+	.has-js .inquiry {
 		opacity: 0;
 		transition: opacity 900ms cubic-bezier(0.42, 0, 0.32, 1.17);
 	}
@@ -32,7 +32,7 @@
 	#products:has(
 			.product-category-list > li:not(:first-child)[data-state="visible"]
 		)
-		.inquiry {
+		.inquiry[data-sticky] {
 		opacity: 1;
 	}
 }
