@@ -9,9 +9,11 @@
 	);
 	--main-padding: var(--space-xl-5xl);
 	--section-gap: var(--space-4xl-5xl);
-	--card-padding: var(--space-l);
-	--button-padding-block: var(--space-3xs);
-	--button-padding-inline: var(--space-2xs);
+	--card-padding-block: var(--space-l-xl);
+	--card-padding-inline: var(--space-l-xl);
+	--card-padding: var(--card-padding-block) var(--card-padding-inline);
+	--button-padding-block: var(--space-2xs);
+	--button-padding-inline: var(--space-xs);
 	--button-padding: var(--button-padding-block) var(--button-padding-inline);
 
 	--heading-text-color: var(--green-100);
@@ -87,7 +89,8 @@ h2 {
 }
 
 h3 {
-	font-size: var(--step-3);
+	/* font-size: var(--step-3); */
+	font-size: var(--step-4);
 }
 
 p {
