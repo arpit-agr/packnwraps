@@ -86,7 +86,7 @@
 
 .product-items-list {
 	--columns: 2;
-	--grid-gap: calc(0.5 * var(--card-padding-inline));
+	--grid-gap: var(--space-s);
 }
 
 @media (min-width: 33.1875rem) {
