@@ -1,12 +1,11 @@
 .certificate-list {
-	--flow-space: var(--space-l-xl);
 	--cluster-horizontal-alignment: start;
-	--cluster-gap: var(--space-2xs);
+	--cluster-gap: var(--space-3xs);
 }
 
 .certificate-list :where(img, svg) {
-	inline-size: var(--space-3xl-5xl);
-	block-size: var(--space-3xl-5xl);
+	inline-size: var(--space-4xl-5xl);
+	block-size: var(--space-4xl-5xl);
 	object-fit: contain;
 	filter: grayscale(1);
 	transition: filter 200ms ease;
