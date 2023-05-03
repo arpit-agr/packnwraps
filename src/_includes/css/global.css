@@ -178,6 +178,7 @@ hr {
 	border-color: var(--heading-text-color);
 }
 
-img {
+img,
+picture {
 	border-radius: var(--space-3xs);
 }

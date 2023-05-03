@@ -110,11 +110,17 @@
 
 .product-items-list li picture {
 	inline-size: 100%;
+	overflow: hidden;
 }
 
 .product-items-list img {
 	inline-size: 100%;
 	block-size: auto;
 	object-fit: cover;
+	transition: scale 400ms ease;
 	/* mix-blend-mode: multiply; */
+}
+
+.product-items-list li:where(:focus-within, :hover) img {
+	scale: 1.1;
 }
