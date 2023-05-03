@@ -202,6 +202,12 @@ products:
           type:
             - "Half size"
             - "Full size"
+qualityControl:
+  heading: "Quality Control"
+  content:
+    - "The most essential core component of us begins and ends with quality control. Our team takes the responsibility for the quality of the products, the commitment to customer satisfaction that comes from products and the quality of their work."
+    - "Each product is handled by our team as it passes through our manufacturing unit, on their way out to our esteemed customers."
+    - "Focusing on the quality of each order, monitoring and adjusting protocols and processes based on key metrics for the proper packing and sharing QC reports with the customer before shipping of each order has helped us be more efficient and gain customer satisfaction."
 gallery:
   heading: "Product Gallery"
   description: "Take a look at the diverse food service disposables & packaging products that we manufacture and deliver."
