@@ -8,7 +8,7 @@
 }
 
 :where(h2, h3) svg path {
-	fill: currentColor;
+	fill: var(--accent-dark);
 }
 
 .desc {
