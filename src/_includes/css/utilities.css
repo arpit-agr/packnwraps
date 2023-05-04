@@ -32,6 +32,16 @@
 	gap: var(--grid-gap, 1em);
 }
 
+.grid[data-variant="2-columns"] {
+	--grid-gap: var(--section-gap);
+}
+
+@media (min-width: 54.75rem) {
+	.grid[data-variant="2-columns"] {
+		--columns: 2;
+	}
+}
+
 .vh {
 	border: 0;
 	clip: rect(0 0 0 0);

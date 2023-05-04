@@ -1,31 +1,33 @@
-<section id="contact" class="flow">
+<section id="contact" class="grid fade-in" data-variant="2-columns">
   <h2 class="cluster fade-in">
     {{ contact.heading }}
     {%- include "partials/questions.html" -%}
   </h2>
-  <p class="desc fade-in">
-    {{ contact.description }}
-  </p>
-  <p class="contact-method cluster fade-in">
-    <span class="icon-container">
-      {% include "partials/mail.html" %}
-    </span>
-    <span>
-      Mail:
-      <a href="mailto:{{ contact.email }}">
-        {{ contact.email }}
-      </a>
-    </span>
-  </p>
-  <p class="contact-method cluster fade-in">
-    <span class="icon-container">
-      {% include "partials/phone.html" %}
-    </span>
-    <span>
-      Phone:
-      <a href="tel:{{ contact.phone }}">
-        {{ contact.phone }}
-      </a>
-    </span>
-  </p>
+  <div class="flow">
+    <p class="desc fade-in">
+      {{ contact.description }}
+    </p>
+    <p class="contact-method cluster fade-in">
+      <span class="icon-container">
+        {% include "partials/mail.html" %}
+      </span>
+      <span>
+        Mail:
+        <a href="mailto:{{ contact.email }}">
+          {{ contact.email }}
+        </a>
+      </span>
+    </p>
+    <p class="contact-method cluster fade-in">
+      <span class="icon-container">
+        {% include "partials/phone.html" %}
+      </span>
+      <span>
+        Phone:
+        <a href="tel:{{ contact.phone }}">
+          {{ contact.phone }}
+        </a>
+      </span>
+    </p>
+  </div>
 </section>

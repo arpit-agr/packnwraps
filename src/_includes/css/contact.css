@@ -1,0 +1,19 @@
+#contact {
+	--grid-gap: 1em;
+	min-block-size: 16rem;
+	align-items: center;
+
+	padding: var(--card-padding);
+	background-color: var(--card-bg-color);
+	border-radius: var(--card-bdrs);
+}
+
+@media (min-width: 54.75rem) {
+	#contact h2 {
+		--cluster-horizontal-alignment: center;
+	}
+}
+
+.contact-method {
+	--cluster-gap: var(--icon-text-gap);
+}

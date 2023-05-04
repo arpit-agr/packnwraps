@@ -10,7 +10,7 @@
 
 #products .inquiry {
 	--flow-space: var(--card-padding-block);
-	--cluster-gap: var(--space-2xs);
+	--cluster-gap: var(--icon-text-gap);
 	--cluster-vertical-alignment: center;
 
 	--button-bg-color: var(--accent-dark);

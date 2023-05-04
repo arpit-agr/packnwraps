@@ -1,7 +1,7 @@
 .product-category-list {
 	position: relative;
 	background: var(--card-bg-color);
-	border-radius: var(--space-2xs);
+	border-radius: var(--card-bdrs);
 }
 
 .product-category-list:after {
