@@ -2,12 +2,6 @@
 	--flow-space: var(--space-xl);
 }
 
-@supports (text-wrap: balance) {
-	#products .desc {
-		text-wrap: balance;
-	}
-}
-
 #products .inquiry {
 	--flow-space: var(--card-padding-block);
 	--cluster-gap: var(--icon-text-gap);

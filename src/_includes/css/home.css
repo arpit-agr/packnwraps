@@ -15,6 +15,12 @@
 	--text-line-length: 49ch;
 }
 
+@supports (text-wrap: balance) {
+	.desc {
+		text-wrap: balance;
+	}
+}
+
 /* if header was sticky we would need to add the header height as well */
 /* :where([id]:not(main)) {
 	scroll-margin-top: calc((var(--section-gap) / 2) + var(--header-height));
