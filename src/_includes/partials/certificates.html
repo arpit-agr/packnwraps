@@ -2,7 +2,7 @@
 <ul class="certificate-list cluster" role="list">
   {%- for image in collections.certificates -%}
     <li>
-      {% if image.data.source %}  
+      {% if image.data.source %}
         {%- set source = "src/images/certificates/" + image.data.source -%}
         {%- set alt = image.data.alt -%}
         {%- set sizes = "80px" -%}

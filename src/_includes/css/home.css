@@ -6,13 +6,21 @@
 	--cluster-gap: var(--space-2xs);
 }
 
-.about-contact-container {
+.grid[data-variant="2-columns"] {
 	--grid-gap: var(--section-gap);
 }
 
-@media (min-width: 48rem) {
-	.about-contact-container {
+@media (min-width: 54.75rem) {
+	.grid[data-variant="2-columns"] {
 		--columns: 2;
+	}
+
+	.certificate-list {
+		block-size: 0;
+	}
+
+	#contact {
+		margin-block-start: calc(-1 * var(--certificate-flow-space));
 	}
 }
 

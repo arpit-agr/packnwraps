@@ -1,0 +1,10 @@
+<section id="quality-control" class="flow">
+  <h2 class="cluster fade-in">
+    {{ qualityControl.heading }}
+    {%- include "partials/check-list.html" -%}
+  </h2>
+  {% for item in qualityControl.content %}
+    <p class="fade-in">{{ item }}</p>
+  {% endfor %}
+  {%- include "partials/certificates.html" -%}
+</section>

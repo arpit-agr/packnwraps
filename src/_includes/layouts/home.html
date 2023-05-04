@@ -4,10 +4,11 @@
   {%- include "partials/hero-section.html" -%}
   {%- include "partials/product-section.html" -%}
   {% include "partials/product-gallery.html" %}
-  <div class="about-contact-container grid">
+  <div class="grid" data-variant="2-columns">
     {%- include "partials/about-section.html" -%}
-    {%- include "partials/contact-section.html" -%}
+    {%- include "partials/qc-section.html" -%}
   </div>
+  {%- include "partials/contact-section.html" -%}
   {{ content | safe }}
 {%- endblock -%}
 
