@@ -1,3 +1,16 @@
+:where(h2, h3) {
+	--cluster-gap: var(--space-xs-s);
+}
+
+:where(h2, h3) svg {
+	inline-size: var(--step-4);
+	block-size: var(--step-4);
+}
+
+:where(h2, h3) svg path {
+	fill: currentColor;
+}
+
 .desc {
 	--text-line-length: 49ch;
 }

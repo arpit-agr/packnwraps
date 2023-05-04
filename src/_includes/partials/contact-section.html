@@ -1,5 +1,8 @@
 <section id="contact" class="flow">
-  <h2 class="fade-in">{{ contact.heading }}</h2>
+  <h2 class="cluster fade-in">
+    {{ contact.heading }}
+    {%- include "partials/questions.html" -%}
+  </h2>
   <p class="desc fade-in">
     {{ contact.description }}
   </p>

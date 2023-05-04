@@ -1,5 +1,8 @@
 <section id="about" class="flow">
-  <h2 class="fade-in">{{ about.heading }}</h2>
+  <h2 class="cluster fade-in">
+    {{ about.heading }}
+    {%- include "partials/people-fill.html" -%}
+  </h2>
   {% for item in about.content %}
     <p class="fade-in">{{ item }}</p>
   {% endfor %}
