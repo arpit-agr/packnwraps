@@ -19,7 +19,7 @@
 	--button-padding: var(--button-padding-block) var(--button-padding-inline);
 	--icon-text-gap: var(--space-2xs);
 
-	--heading-text-color: var(--green-100);
+	--heading-text-color: var(--gray-100);
 	--body-primary-color: var(--gray-200);
 	--body-secondary-color: var(--gray-300);
 	--body-bg-color: var(--gray-400);
@@ -56,7 +56,15 @@
 
 body {
 	color: var(--body-primary-color);
-	background-color: var(--body-bg-color);
+	/* background-color: var(--body-bg-color); */
+	background-image: radial-gradient(
+		25% 50% at top center,
+		hsl(var(--primary-hue), 0%, 100%, 0.66),
+		var(--body-bg-color)
+	);
+	background-position: top 0px center;
+	background-size: 120% 100%, 4% auto;
+	background-repeat: repeat;
 
 	font-family: var(--font-plain);
 	font-size: var(--step-0);
