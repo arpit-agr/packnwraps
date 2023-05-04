@@ -3,7 +3,7 @@
 	--max-inline-size: min(80rem, calc(100vw - (2 * var(--gutter))));
 	--max-vw-height: 100vh;
 	--logo-height: var(--space-m-xl);
-	--nav-link-padding: var(--space-xs-s);
+	--nav-link-padding: var(--gutter);
 	--header-height: calc(
 		(2 * var(--nav-link-padding)) + (1em * var(--body-line-height))
 	);

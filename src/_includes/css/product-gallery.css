@@ -1,3 +1,8 @@
+#gallery h2 svg {
+	inline-size: 0.8em;
+	block-size: 0.8em;
+}
+
 .gallery-list {
 	--flow-space: var(--space-xl);
 	column-count: var(--columns, 2);

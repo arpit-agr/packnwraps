@@ -66,7 +66,7 @@ header a:where(:hover, :focus-visible) .underline-illustration .underline-path {
 	inline-size: auto;
 	vertical-align: middle;
 	/* magic number to align the logo with the nav links */
-	translate: 0 3px;
+	translate: 0 2px;
 }
 
 @media (max-width: 23rem) {

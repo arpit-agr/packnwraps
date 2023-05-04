@@ -3,8 +3,8 @@
 }
 
 :where(h2, h3) svg {
-	inline-size: var(--step-4);
-	block-size: var(--step-4);
+	inline-size: 1em;
+	block-size: 1em;
 }
 
 :where(h2, h3) svg path {

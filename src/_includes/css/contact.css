@@ -1,6 +1,6 @@
 #contact {
-	--grid-gap: 1em;
-	min-block-size: 16rem;
+	--grid-gap: 1em var(--section-gap);
+	min-block-size: 20rem;
 	max-inline-size: fit-content;
 	align-items: center;
 
@@ -17,6 +17,18 @@
 #contact > * {
 	color: inherit;
 }
+
+/* #contact h2 > :first-child {
+	background: linear-gradient(
+		180deg,
+		var(--white) 0%,
+		rgba(255, 255, 255, 0.7) 100%
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+} */
 
 /* mail */
 #contact > div > p:nth-child(2) {
