@@ -1,7 +1,3 @@
-#gallery {
-	padding-block-end: var(--section-inner-padding);
-}
-
 .gallery-list {
 	--flow-space: var(--space-xl);
 	column-count: var(--columns, 2);

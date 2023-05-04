@@ -18,7 +18,7 @@
 }
 
 .has-js .view-more {
-	--flow-space: -2em;
+	translate: 0 -100%;
 	position: relative;
 	z-index: 1;
 
@@ -31,7 +31,7 @@
 }
 
 .has-js .view-more[aria-expanded="true"] {
-	--flow-space: 1em;
+	translate: 0 0;
 }
 
 .has-js .view-more[aria-expanded="true"]::before {
@@ -40,8 +40,8 @@
 
 /* 'gallery' items */
 .gallery-list[data-state="hidden"] {
-	mask-image: linear-gradient(#000 50%, transparent);
 	-webkit-mask-image: linear-gradient(#000 50%, transparent);
+	mask-image: linear-gradient(#000 50%, transparent);
 	overflow: hidden;
 }
 
