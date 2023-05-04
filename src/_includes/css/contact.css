@@ -1,6 +1,7 @@
 #contact {
 	--grid-gap: 1em;
 	min-block-size: 16rem;
+	max-inline-size: fit-content;
 	align-items: center;
 
 	padding: var(--card-padding);
@@ -9,6 +10,10 @@
 }
 
 @media (min-width: 54.75rem) {
+	#contact {
+		max-inline-size: unset;
+	}
+
 	#contact h2 {
 		--cluster-horizontal-alignment: center;
 	}
