@@ -8,7 +8,8 @@
 		(2 * var(--nav-link-padding)) + (1em * var(--body-line-height))
 	);
 	--main-padding: var(--space-xl-5xl);
-	--certificate-flow-space: var(--space-l-xl);
+	--section-gap: var(--space-4xl);
+	--section-inner-padding: var(--space-l-xl);
 	--card-padding-block: var(--space-l-xl);
 	--card-padding-inline: var(--space-s-xl);
 	--card-padding: var(--card-padding-block) var(--card-padding-inline);

@@ -3,9 +3,10 @@
 	gap: var(--card-padding);
 	grid-template-columns: 1fr;
 	grid-template-rows: auto 1fr;
+	min-block-size: 20rem;
 }
 
-@media (min-width: 50.25rem) {
+@media (min-width: 54.75rem) {
 	#hero {
 		grid-template-columns: 1.73fr 1fr;
 		grid-template-rows: 1fr;
@@ -35,10 +36,6 @@
 
 #hero .featured-img {
 	block-size: 100%;
-
-	/* FIXME: magic number */
-	min-block-size: 256px;
-
 	position: relative;
 	border-radius: var(--space-3xs);
 }

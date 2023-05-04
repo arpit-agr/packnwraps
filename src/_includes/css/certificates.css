@@ -1,5 +1,5 @@
 .certificate-list {
-	--flow-space: var(--certificate-flow-space);
+	--flow-space: var(--section-inner-padding);
 	--cluster-horizontal-alignment: start;
 	--cluster-gap: var(--space-3xs);
 }
