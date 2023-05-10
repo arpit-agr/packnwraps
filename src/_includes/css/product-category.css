@@ -4,17 +4,6 @@
 	border-radius: var(--card-bdrs);
 }
 
-.product-category-list:after {
-	content: "";
-	position: absolute;
-	inset-block-start: 100%;
-	inset-inline-start: 50%;
-	translate: 50% 0;
-	block-size: var(--card-padding-block);
-	inline-size: var(--outline-width);
-	background: var(--separator);
-}
-
 .product-category-list > li {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -40,23 +29,12 @@
 	inline-size: 4ch;
 	block-size: 4ch;
 
-	background: var(--heading-text-color);
-	color: var(--white);
-	--per: 10%;
-	clip-path: polygon(
-		0% var(--per),
-		var(--per) var(--per),
-		var(--per) 0%,
-		calc(100% - var(--per)) 0%,
-		calc(100% - var(--per)) var(--per),
-		100% var(--per),
-		100% calc(100% - var(--per)),
-		calc(100% - var(--per)) calc(100% - var(--per)),
-		calc(100% - var(--per)) 100%,
-		var(--per) 100%,
-		var(--per) calc(100% - var(--per)),
-		0% calc(100% - var(--per))
-	);
+	color: var(--accent-darkest);
+	border-width: 0 0 calc(0.5 * var(--outline-width))
+		calc(0.5 * var(--outline-width));
+	border-style: solid;
+	border-color: currentColor;
+	border-radius: 0 0 0 var(--space-3xs);
 }
 
 @media (min-width: 40rem) {
@@ -95,13 +73,9 @@
 	gap: var(--grid-gap);
 }
 
-.product-items-list li {
+.product-items-list li > button {
 	--stack-gap: var(--space-2xs);
 	--stack-horizontal-alignment: center;
-	/* font-weight: 500; */
-}
-
-.product-items-list li p {
 	color: var(--heading-text-color);
 	font-size: var(--step--1);
 	letter-spacing: var(--text-letter-spacing);
@@ -118,9 +92,8 @@
 	block-size: auto;
 	object-fit: cover;
 	transition: scale 400ms ease;
-	/* mix-blend-mode: multiply; */
 }
 
-.product-items-list li:where(:focus-within, :hover) img {
-	scale: 1.1;
+.product-items-list button:where(:hover, :focus-visible) img {
+	scale: 1.05;
 }

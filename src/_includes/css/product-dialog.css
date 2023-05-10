@@ -1,0 +1,81 @@
+.dialog-content {
+	--flow-space: var(--card-padding-block);
+	padding: var(--space-l-xl);
+}
+
+.dialog-title {
+	position: relative;
+	max-inline-size: fit-content;
+	font-size: var(--step-3);
+	font-weight: 500;
+	color: var(--heading-text-color);
+	line-height: var(--heading-line-height);
+}
+
+.dialog-title .underline-illustration {
+	position: absolute;
+	inset-block-start: 100%;
+	inset-inline-start: 0;
+	inline-size: 100%;
+	block-size: var(--space-3xs-2xs);
+	z-index: -1;
+}
+
+.product-items-list li dialog[open] li {
+	--flow-space: 0.75em;
+}
+
+.close-dialog {
+	--flow-space: 0;
+	position: absolute;
+	inset-block-start: var(--card-padding-block);
+	inset-inline-end: var(--card-padding-inline);
+	inline-size: var(--space-xl);
+	block-size: var(--space-xl);
+	display: grid;
+	place-items: center;
+	border: var(--outline-width) solid var(--accent);
+	border-radius: 100%;
+
+	transition: all 400ms cubic-bezier(0.42, 0, 0.32, 1.17);
+}
+
+.product-items-list ul li {
+	--cluster-gap: 0;
+}
+
+@supports selector(:has(+ *)) {
+	.product-items-list ul li::before {
+		content: "";
+		display: inline-block;
+		inline-size: 1em;
+		block-size: calc(1em * var(--body-line-height));
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 109 58'%3E%3Cg stroke='%230ccf5d' stroke-linecap='round' stroke-miterlimit='10' stroke-width='16' clip-path='url(%23a)'%3E%3Cpath d='M8.69 28.28c20.93-.41 62.37 2.42 91.68 3.07M100.37 31.35c-4.19 2.38-29.44 14.79-35.72 17.72M100.37 31.35C97.02 28 79.58 13.91 74.13 8.75'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M.5 57.5V.5h108v57z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-inline-end: var(--icon-text-gap);
+	}
+}
+
+.close-dialog svg {
+	inline-size: var(--space-xs);
+	block-size: var(--space-xs);
+}
+
+.close-dialog path {
+	fill: var(--accent);
+}
+
+.close-dialog:where(:hover, :focus-visible) {
+	background-color: var(--accent);
+}
+
+.close-dialog:where(:hover, :focus-visible) path {
+	fill: var(--white);
+}
+
+.inquiry {
+	--button-bg-color: var(--accent-dark);
+	--button-text-color: var(--white);
+	max-inline-size: fit-content;
+}

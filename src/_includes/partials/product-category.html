@@ -12,7 +12,7 @@
         <span>
           {{ category.title }}
         </span>
-        <span class="counter">
+        <span class="counter" aria-hidden="true">
           0{{ loop.index }}
         </span>
       </h3>
@@ -21,13 +21,19 @@
         role="list" 
       >
         {% for item in category.items %}
-          <li class="stack">
+          <li>
             {%- set source = "src/images/gallery/" + item.image.source -%}
             {# TODO: provide alt #}
             {%- set alt = item.image.alt -%}
             {%- set sizes = "(min-width: 64rem) 17vw, (min-width: 40rem) 25vw, 50vw" -%}
-            {% image source , alt, sizes, loading, fetchPriority %}
-            <p>{{ item.name | safe }}</p>
+            <button 
+              class="show-dialog stack" 
+              aria-label="{{ category.title.split(' ')[0] }} {{ item.name | safe }}"
+            >          
+              {% image source , alt, sizes, loading, fetchPriority %}
+              <span>{{ item.name | safe }}</span>
+            </button>
+            {% include "partials/product-dialog.html" %}
           </li>
         {% endfor %}
       </ul>

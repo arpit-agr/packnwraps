@@ -193,3 +193,28 @@ img,
 picture {
 	border-radius: var(--space-3xs);
 }
+
+dialog {
+	padding: 0;
+	border: none;
+	inline-size: min(30rem, var(--max-inline-size));
+}
+
+:modal {
+	border-radius: var(--card-bdrs);
+	animation: fade-in 800ms;
+}
+
+::backdrop {
+	background-color: rgba(245, 245, 247, 0.6);
+	-webkit-backdrop-filter: blur(24px);
+	backdrop-filter: blur(24px);
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+	animation: fade-in 400ms;
+}
+
+@supports selector(:has(+ *)) {
+	body:has(dialog[open]) {
+		overflow: hidden;
+	}
+}

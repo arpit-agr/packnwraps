@@ -2,7 +2,7 @@
 	--flow-space: var(--space-xl);
 }
 
-#products .inquiry {
+/* #products .inquiry {
 	--flow-space: var(--card-padding-block);
 	--cluster-gap: var(--icon-text-gap);
 	--cluster-vertical-alignment: center;
@@ -28,4 +28,4 @@
 		.inquiry[data-sticky] {
 		opacity: 1;
 	}
-}
+} */

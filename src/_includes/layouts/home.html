@@ -47,63 +47,43 @@
       });
     })();
   </script>
-  
   <script>
-    // https://pqina.nl/blog/applying-styles-based-on-the-user-scroll-position-with-smart-css/
-
-    // The debounce function receives our function as a parameter
-    const debounce = (fn) => {
-
-      // This holds the requestAnimationFrame reference, so we can cancel it if we wish
-      let frame;
-
-      // The debounce function returns a new function that can receive a variable number of arguments
-      return (...params) => {
-        
-        // If the frame variable has been defined, clear it now, and queue for next frame
-        if (frame) { 
-          cancelAnimationFrame(frame);
-        }
-
-        // Queue our function call for the next frame
-        frame = requestAnimationFrame(() => {
-          
-          // Call our function and pass any params we received
-          fn(...params);
-        });
-
-      } 
-    };
-
-    //define inquiry element
-    const inquiryElement = document.querySelector(".inquiry");
-
-    const toggleInquiry = () => {
-      if (window.scrollY > 32) {
-        inquiryElement.toggleAttribute("data-sticky", "true");
+    function showDialog(element) {
+      const parentElement = element.parentElement;
+      const dialogElement = parentElement.querySelector("dialog");
+      if (dialogElement) {
+        dialogElement.showModal();
       }
     }
 
-    // Listen for new scroll events, here we debounce our `toggleInquiry` function
-    document.addEventListener('scroll', debounce(toggleInquiry), { passive: true });
+    function closeDialog(element) {
+      const dialogElement = element.closest('dialog');
+      if (dialogElement) {
+        dialogElement.close();
+      }
+    }
 
-    // Update scroll position for first time
-    toggleInquiry();
+    function closeDialogWhenClickedOutside(element) {
+      if(event.target.matches('dialog')) {
+        element.close();
+      }
+    }
+
+    function doSomethingOnClick(array, instructions) {
+      array.forEach(element => {
+        element.addEventListener("click", (event) => {
+          instructions(element);
+        })
+      })
+    }
+    
+    const showDialogButtonList = document.querySelectorAll(".show-dialog");
+    const dialogList = document.querySelectorAll("dialog");
+    const closeDialogButtonList = document.querySelectorAll(".close-dialog");
+
+    doSomethingOnClick(showDialogButtonList, showDialog);
+    doSomethingOnClick(dialogList, closeDialogWhenClickedOutside);
+    doSomethingOnClick(closeDialogButtonList, closeDialog);
   </script>
-  
-  {# <script>
-    const header = document.querySelector(".site-head");
-    const intercept = document.querySelector(".skip-to-main");
-
-    const observer = new IntersectionObserver(([entry]) => {
-      header.toggleAttribute("data-sticky", !entry.isIntersecting);
-    });
-
-    observer.observe(intercept);
-  </script> #}
-
-  {# <script src="/scripts/details-utils.js" defer async></script> #}
-  <script src="/scripts/toggle-disclosure.js" defer async></script>
-  {# <script src="/scripts/set-height.js" defer async></script> #}
-
+  <script src="/scripts/toggle-disclosure.js" defer></script>
 {%- endblock -%}
