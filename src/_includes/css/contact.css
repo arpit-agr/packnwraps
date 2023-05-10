@@ -35,11 +35,6 @@
 	--flow-space: var(--space-6xl-7xl);
 }
 
-#contact a:hover {
-	color: inherit;
-	text-decoration-color: var(--accent);
-}
-
 .question-mark {
 	fill: var(--white);
 }
