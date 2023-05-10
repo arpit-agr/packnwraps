@@ -175,10 +175,10 @@ hr {
 	padding: var(--button-padding);
 	background-color: var(--button-bg-color, var(--card-bg-color));
 	color: var(--button-text-color, unset);
-	border: var(--outline-width) solid var(--separator);
-	border-radius: var(--space-2xs);
+	/* border: var(--outline-width) solid var(--separator); */
+	border-radius: var(--space-m);
 	text-decoration: none;
-	box-shadow: var(--shadow-3);
+	box-shadow: var(--shadow-1);
 
 	transition: all 400ms cubic-bezier(0.42, 0, 0.32, 1.17);
 }
