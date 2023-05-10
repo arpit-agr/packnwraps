@@ -18,6 +18,7 @@
 
 	--white: hsl(var(--primary-hue), 0%, 96%);
 	--red: hsl(358, 68%, 45%);
+	--pure-white: white;
 
 	--green-opacity: hsla(var(--primary-hue), 89%, 43%, 50.2%);
 	--gray-opacity: hsla(var(--primary-hue), 2%, 40%, 50.2%);

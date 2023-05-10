@@ -1,4 +1,4 @@
-<section id="gallery" class="flow">
+<section id="gallery" class="disclosure-widget flow">
   <h2 class="cluster fade-in">
     <span>{{ gallery.heading }}</span>
     {%- include "partials/columns.html" -%}
@@ -7,7 +7,7 @@
     {{ gallery.description }}
   </p>
   {# TODO: provide alt #}
-  <ul class="gallery-list flow disclosure-widget" role="list">
+  <ul class="gallery-list flow" role="list">
     {%- for image in collections.gallery -%}
       <li>
         {%- set source = "src/images/gallery/" + image.data.source -%}

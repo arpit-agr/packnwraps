@@ -14,13 +14,26 @@
 
 {%- block bodyScripts -%}
   <script>
-    (function () {
-      if (!'IntersectionObserver' in window) {
-        return;
+    // higher order functions
+    function doSomething(array, instructions) {
+      for (const element of array) {
+        instructions(element);
       }
-      const elements = document.querySelectorAll('.fade-in');
+    }
 
-      let observer = new IntersectionObserver(
+    function doSomethingOnClick(array, instructions) {
+      for (const element of array) {
+        element.addEventListener("click", (event) => {
+          instructions(element);
+        });
+      }
+    }
+  </script>
+  <script>
+    let observer = null;
+
+    if ('IntersectionObserver' in window) {
+      observer = new IntersectionObserver(
         (changes, observer) => {
           let timeout = 0;
 
@@ -39,13 +52,16 @@
           threshold: 0
         }
       );
+    }
 
-      elements.forEach(element => {
-        element.setAttribute('data-state', 'hidden');
+    function setHiddenAttributeAndObserve(element) {
+      element.setAttribute('data-state', 'hidden');
+      observer.observe(element);
+    }
 
-        observer.observe(element);
-      });
-    })();
+    const fadeInElements = document.querySelectorAll('.fade-in');
+    doSomething(fadeInElements, setHiddenAttributeAndObserve);
+
   </script>
   <script>
     function showDialog(element) {
@@ -67,14 +83,6 @@
       if(event.target.matches('dialog')) {
         element.close();
       }
-    }
-
-    function doSomethingOnClick(array, instructions) {
-      array.forEach(element => {
-        element.addEventListener("click", (event) => {
-          instructions(element);
-        })
-      })
     }
     
     const showDialogButtonList = document.querySelectorAll(".show-dialog");

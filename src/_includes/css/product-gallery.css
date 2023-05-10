@@ -1,3 +1,7 @@
+#gallery {
+	position: relative;
+}
+
 #gallery h2 svg {
 	inline-size: 0.8em;
 	block-size: 0.8em;

@@ -1,16 +1,22 @@
-function toggleDisclosure() {
-	if (this.getAttribute("aria-expanded") == "false") {
-		this.innerText = " View Less";
-		this.setAttribute("aria-expanded", "true");
-		this.previousElementSibling.setAttribute("data-state", "visible");
+function setHiddenAttribute(element) {
+	element.setAttribute("data-hidden", true);
+}
+
+function toggleDisclosure(element) {
+	element.closest(".disclosure-widget").toggleAttribute("data-hidden");
+
+	const isExpanded = element.getAttribute("aria-expanded") === "false";
+	element.setAttribute("aria-expanded", isExpanded);
+
+	if (isExpanded) {
+		element.textContent = "View Less";
 	} else {
-		this.innerText = " View More";
-		this.setAttribute("aria-expanded", "false");
-		this.previousElementSibling.setAttribute("data-state", "hidden");
+		element.textContent = "View More";
 	}
 }
-const disclosureWidget = document.querySelectorAll(".disclosure-widget");
-const viewMoreButton = document.querySelectorAll(".view-more");
 
-disclosureWidget.forEach((el) => el.setAttribute("data-state", "hidden"));
-viewMoreButton.forEach((el) => el.addEventListener("click", toggleDisclosure));
+const disclosureWidgets = document.querySelectorAll(".disclosure-widget");
+const disclosureButtons = document.querySelectorAll(".view-more");
+
+doSomething(disclosureWidgets, setHiddenAttribute);
+doSomethingOnClick(disclosureButtons, toggleDisclosure);
