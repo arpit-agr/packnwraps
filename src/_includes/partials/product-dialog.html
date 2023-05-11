@@ -1,5 +1,5 @@
 <dialog class="product-dialog">
-  <div class="dialog-content flow">
+  <div class="dialog-content">
     <p class="dialog-title">
       {{ category.title.split(' ')[0] }} {{ item.name | safe }}
       {%- include "partials/underline.html" -%}
@@ -7,7 +7,7 @@
     <ul class="flow" role="list">
       {# TODO: update when the content is ready #}
       {% for item in products.list[1].category %}
-        <li class="cluster">{{ item.title }}</li>
+        <li>{{ item.title }}</li>
       {% endfor %}
     </ul>
     <button class="close-dialog">

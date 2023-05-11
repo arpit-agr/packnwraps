@@ -1,12 +1,17 @@
 .dialog-content {
-	--flow-space: var(--card-padding-block);
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: var(--card-padding-block) 0;
+	align-items: center;
 	padding: var(--space-l-xl);
 }
 
 .dialog-title {
+	grid-column: 1/2;
+
 	position: relative;
 	max-inline-size: fit-content;
-	font-size: var(--step-3);
+	font-size: var(--step-1);
 	font-weight: 500;
 	color: var(--heading-text-color);
 	line-height: var(--heading-line-height);
@@ -17,7 +22,7 @@
 	inset-block-start: 100%;
 	inset-inline-start: 0;
 	inline-size: 100%;
-	block-size: var(--space-3xs-2xs);
+	block-size: var(--space-3xs);
 	z-index: -1;
 }
 
@@ -26,22 +31,32 @@
 }
 
 .close-dialog {
-	--flow-space: 0;
-	position: absolute;
-	inset-block-start: var(--card-padding-block);
-	inset-inline-end: var(--card-padding-inline);
+	grid-column: 2/-1;
+	grid-row: 1;
 	inline-size: var(--space-xl);
 	block-size: var(--space-xl);
 	display: grid;
 	place-items: center;
-	border: var(--outline-width) solid var(--accent);
+	outline: var(--outline-width) solid var(--accent);
+	outline-offset: calc(-1 * var(--outline-offset));
 	border-radius: 100%;
 
 	transition: all 400ms cubic-bezier(0.42, 0, 0.32, 1.17);
 }
 
+/* a11y.css sets outline none to all :focus:not(:focus-visible) */
+/* so we reset it here */
+.close-dialog:focus:not(:focus-visible) {
+	outline: var(--outline-width) solid var(--accent);
+}
+
+.product-items-list ul {
+	grid-column: 1/-1;
+}
+
 .product-items-list ul li {
-	--cluster-gap: 0;
+	display: flex;
+	gap: 0;
 }
 
 @supports selector(:has(+ *)) {
