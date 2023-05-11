@@ -77,12 +77,12 @@
 	block-size: var(--space-xs);
 }
 
-.close-dialog path {
-	fill: var(--accent);
-}
-
 .close-dialog:where(:hover, :focus-visible) {
 	background-color: var(--accent);
+}
+
+.close-dialog path {
+	fill: var(--heading-text-color);
 }
 
 .close-dialog:where(:hover, :focus-visible) path {
