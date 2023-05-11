@@ -90,7 +90,13 @@
 }
 
 .inquiry {
-	--button-bg-color: var(--accent-dark);
-	--button-text-color: var(--white);
+	--button-bg-color: transparent;
+	--button-text-color: var(--body-primary-color);
+
 	max-inline-size: fit-content;
+	outline-color: var(--accent);
+
+	/* font-size: var(--step--1);
+	text-transform: uppercase;
+	letter-spacing: var(--text-letter-spacing); */
 }
