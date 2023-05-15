@@ -4,12 +4,21 @@
       {{ category.title.split(' ')[0] }} {{ item.name | safe }}
       {%- include "partials/underline.html" -%}
     </p>
-    <ul class="flow" role="list">
-      {# TODO: update when the content is ready #}
-      {% for item in products.list[1].category %}
-        <li>{{ item.title }}</li>
-      {% endfor %}
-    </ul>
+    {% if item.variants | length > 1 %}  
+      <ul class="product-vairants flow" role="list">
+        {% for vairant in item.variants %}
+          <li>{{ vairant }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <div class="product-vairants">
+        <p>
+          {% for vairant in item.variants %}
+            {{ vairant }}
+          {% endfor %}
+        </p>
+      </div>
+    {% endif %}
     <button class="close-dialog">
       {%- include "partials/close.html" -%}
     </button>

@@ -198,7 +198,7 @@ dialog {
 	padding: 0;
 	border: none;
 	background-color: var(--pure-white);
-	inline-size: min(30rem, var(--max-inline-size));
+	inline-size: min(24rem, var(--max-inline-size));
 }
 
 :modal {

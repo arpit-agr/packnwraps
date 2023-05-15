@@ -21,11 +21,11 @@
         role="list" 
       >
         {% for item in category.items %}
+        {%- set source = "src/images/gallery/" + item.image.source -%}
+        {%- set alt = item.image.alt -%}
+        {%- set sizes = "(min-width: 64rem) 17vw, (min-width: 40rem) 25vw, 50vw" -%}
+        {% if item.variants %}
           <li>
-            {%- set source = "src/images/gallery/" + item.image.source -%}
-            {# TODO: provide alt #}
-            {%- set alt = item.image.alt -%}
-            {%- set sizes = "(min-width: 64rem) 17vw, (min-width: 40rem) 25vw, 50vw" -%}
             <button 
               class="show-dialog stack" 
               aria-label="{{ category.title.split(' ')[0] }} {{ item.name | safe }}"
@@ -35,6 +35,12 @@
             </button>
             {% include "partials/product-dialog.html" %}
           </li>
+          {% else %}
+            <li class="stack">
+              {% image source , alt, sizes, loading, fetchPriority %}
+              <span>{{ item.name | safe }}</span>
+            </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </li>

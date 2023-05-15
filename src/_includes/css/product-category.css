@@ -73,13 +73,17 @@
 	gap: var(--grid-gap);
 }
 
-.product-items-list li > button {
-	--stack-gap: var(--space-2xs);
-	--stack-horizontal-alignment: center;
+.product-items-list li span {
 	color: var(--heading-text-color);
 	font-size: var(--step--1);
 	letter-spacing: var(--text-letter-spacing);
 	text-transform: uppercase;
+}
+
+.product-items-list li,
+.product-items-list li > button {
+	--stack-gap: var(--space-2xs);
+	--stack-horizontal-alignment: center;
 }
 
 .product-items-list li picture {
@@ -91,6 +95,7 @@
 	inline-size: 100%;
 	block-size: auto;
 	object-fit: cover;
+	aspect-ratio: 1;
 	transition: scale 400ms ease;
 }
 
