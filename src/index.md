@@ -31,14 +31,14 @@ products:
             - "Sleeve Bag"
         - name: "Mailers"
           image:
-            source: "Paper Mailer.jpg"
+            source: "paper-mailer.jpg"
             alt: ""
           variants:
             - "Poly Mailers"
             - "Coex Mailers - Single and Double Seal"
         - name: "Containers"
           image:
-            source: "Paper Container.jpg"
+            source: "paper-container.jpg"
             alt: ""
           variants:
             - "Kraft Take Out Containers"
@@ -52,7 +52,7 @@ products:
             - "Corrugated Clamshells - Available in all Flutes"
         - name: "Wraps / sheets"
           image:
-            source: "Paper Wraps.jpg"
+            source: "paper-wraps.jpg"
             alt: ""
           variants:
             - "Deli Wraps"
@@ -97,7 +97,7 @@ products:
       items:
         - name: "Bags"
           image:
-            source: "Plastic Bags.jpg"
+            source: "plastic-bags.jpg"
             alt: ""
           variants:
             - "T-shirt"
@@ -105,7 +105,7 @@ products:
             - "Soft Loop Handle"
         - name: "Mailers"
           image:
-            source: "Plastic Mailers.jpg"
+            source: "plastic-mailers.jpg"
             alt: ""
           variants:
             - "PP"
@@ -122,7 +122,7 @@ products:
             alt: ""
         - name: "Food Storage Bags"
           image:
-            source: "Food Storage Bags.jpg"
+            source: "food-storage-bags.jpg"
             alt: ""
           variants:
             - "Slider"
@@ -131,7 +131,7 @@ products:
       items:
         - name: "Plates"
           image:
-            source: "Plastic Plate.jpg"
+            source: "plastic-plate.jpg"
             alt: ""
           variants:
             - "6″ to 10″ Round"
@@ -145,7 +145,7 @@ products:
             - "PET with Lids"
         - name: "Bowls"
           image:
-            source: "Plastic Bowls.jpg"
+            source: "plastic-bowls.jpg"
             alt: ""
           variants:
             - "12oz"
