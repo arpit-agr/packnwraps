@@ -22,186 +22,164 @@ products:
       items:
         - name: "Bags"
           image:
-            source: "2412295.jpg"
+            source: "12-500x500.webp"
             alt: ""
+          variants:
+            - "Twisted & Flat Handle"
+            - "SOS"
+            - "V-Bottom"
+            - "Sleeve Bag"
         - name: "Mailers"
           image:
             source: "2412295.jpg"
             alt: ""
+          variants:
+            - "Poly Mailers"
+            - "Coex Mailers - Single and Double Seal"
         - name: "Containers"
           image:
-            source: "2412295.jpg"
+            source: "2007827.jpg"
             alt: ""
+          variants:
+            - "Kraft Take Out Containers"
+            - "Soup Bowls"
+            - "Salad Bowls"
         - name: "Clamshells"
           image:
-            source: "2412295.jpg"
+            source: "1696661.jpg"
             alt: ""
+          variants:
+            - "Corrugated Clamshells - Available in all Flutes"
         - name: "Wraps / sheets"
           image:
-            source: "2412295.jpg"
+            source: "Figure-4-V-Bottom-Paper-Bag-with-Strip-Cut-Window.jpg"
             alt: ""
+          variants:
+            - "Deli Wraps"
+            - "Burger Wraps"
+            - "Foil Cushion Sheets"
+            - "Interfolded Sheets"
     - title: "Paper Tableware"
       specialText: "PFAS free"
       items:
         - name: "Plates"
           image:
-            source: "2412295.jpg"
+            source: "Paper_Plate.jpg"
             alt: ""
+          variants:
+            - "Round - 6″ to 10″"
+            - "Square - 6″ to 10″"
         - name: "Cups"
           image:
-            source: "2412295.jpg"
+            source: "81GMhMdt7oL.jpg"
             alt: ""
+          variants:
+            - "Hot Coffee"
+            - "Cold"
+            - "Double Wall"
+            - "Triple Wall"
         - name: "Bowls"
           image:
-            source: "2412295.jpg"
+            source: "pap-bowl.jpg"
             alt: ""
+          variants:
+            - "12oz"
+            - "16oz"
+            - "20oz"
         - name: "Napkins"
           image:
-            source: "2412295.jpg"
+            source: "Napkins_-_isolated.jpg"
             alt: ""
+          variants:
+            - "Beverage"
+            - "Lunch & Dinner - 1 to 3 ply"
     - title: "Plastic Packaging"
       items:
         - name: "Bags"
           image:
             source: "2412295.jpg"
             alt: ""
+          variants:
+            - "T-shirt"
+            - "Die-cut"
+            - "Soft Loop Handle"
         - name: "Mailers"
           image:
-            source: "2412295.jpg"
+            source: "2117943.jpg"
             alt: ""
+          variants:
+            - "PP"
+            - "Coex E-commerce"
         - name: "Portion Cups"
           image:
             source: "2412295.jpg"
             alt: ""
-        - name: "T-shirt Bags"
+          variants:
+            - "1oz to 5oz with Lids"
+        - name: "Trash Bags"
           image:
-            source: "2412295.jpg"
+            source: "2257697.jpg"
             alt: ""
         - name: "Food Storage Bags"
           image:
-            source: "2412295.jpg"
+            source: "Figure-4-V-Bottom-Paper-Bag-with-Strip-Cut-Window.jpg"
             alt: ""
+          variants:
+            - "Slider"
+            - "Zip"
     - title: "Plastic Tableware"
       items:
         - name: "Plates"
           image:
             source: "2412295.jpg"
             alt: ""
+          variants:
+            - "6″ to 10″ Round"
         - name: "Cups"
           image:
-            source: "2412295.jpg"
+            source: "2460479.jpg"
             alt: ""
+          variants:
+            - "PP"
+            - "PP Coex"
+            - "PET with Lids"
         - name: "Bowls"
           image:
-            source: "2412295.jpg"
+            source: "2096697.jpg"
             alt: ""
+          variants:
+            - "12oz"
+            - "16oz"
+            - "20oz"
     - title: "Bagasse Tableware"
       specialText: "PFAS free"
       items:
         - name: "Plates"
           image:
-            source: "2412295.jpg"
+            source: "bag-plate.jpg"
             alt: ""
+          variants:
+            - "6″ to 10″ Round"
         - name: "Bowls"
           image:
-            source: "2412295.jpg"
+            source: "bag-bowl.jpg"
             alt: ""
+          variants:
+            - "12oz"
+            - "16oz"
         - name: "Trays"
           image:
-            source: "2412295.jpg"
+            source: "bag-tray.jpg"
             alt: ""
+          variants:
+            - "School"
+            - "Meal"
         - name: "Clamshells"
           image:
-            source: "2412295.jpg"
+            source: "bag-clam.jpg"
             alt: ""
-  list:
-    - title: "Paper"
-      specialText: "PFAS free"
-      image:
-        source: "cardboard-packaging-large.webp"
-        alt: ""
-      category:
-        - title: "Bags"
-          type:
-            - "SOS"
-            - "Shoppers"
-            - "Gift Bags"
-            - "Merchandise"
-            - "V-bottom Plain"
-            - "Window Bags"
-        - title: "Straws"
-          type:
-            - "Plain & Printed"
-            - "Wrapped & Unwrapped"
-        - title: "Kraft Containers"
-          type:
-            - "Natural Kraft"
-            - "Bleached Kraft"
-        - title: "Corrugated Clamshells"
-          type:
-            - "Natural Kraft"
-            - "Bleached Kraft"
-        - title: "Foil Laminated Board Lids"
-        - title: "Foil Cushion Sheets"
-        - title: "Parchment Sheets"
-        - title: "Napkins"
-          type:
-            - "Beverage"
-            - "Lunch"
-            - "Dinner"
-        - title: "Cups (8 to 20oz)"
-    - title: "Plastic"
-      image:
-        source: "plastic-cups.png"
-        alt: ""
-      category:
-        - title: "PP & Coex Cups"
-        - title: "PET Cups & Lids"
-        - title: "Souffle/Portion Cups with Lids"
-        - title: "Trash Bags"
-        - title: "Food Storage Bags"
-        - title: "Poly Mailers"
-          type:
-            - "Single Seal"
-            - "Double Seal"
-        - title: "T-shirt Bags/Thank you Bags"
-        - title: "Soft Loop Handle Shopping Bags"
-    - title: "Bagasse"
-      image:
-        source: "bagasse.jpg"
-        alt: ""
-      specialText: "PFAS free"
-      category:
-        - title: "Plates"
-        - title: "Compartment Trays"
-        - title: "Clamshells"
-        - title: "Bowls"
-    - title: "Aluminum"
-      image:
-        source: "aluminum-foil.jpg"
-        alt: ""
-      category:
-        - title: "9” & 12” Pop-up Sheets"
-          type:
-            - "25ct"
-            - "200ct"
-            - "500ct"
-        - title: "Foil Rolls"
-          type:
-            - "Retail"
-            - "Foodservice"
-        - title: "Roasters"
-          type:
-            - "Oval"
-            - "Rectangle"
-        - title: "Steam Table"
-          type:
-            - "Half size"
-            - "Full size"
-        - title: "Lids"
-          type:
-            - "Half size"
-            - "Full size"
+          variants:
+            - "6″ to 9″"
 qualityControl:
   heading: "Quality Control"
   content:
