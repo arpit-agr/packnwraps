@@ -1,6 +1,7 @@
 .product-category-list {
 	position: relative;
 	background: var(--card-bg-color);
+	border: calc(0.5 * var(--outline-width)) solid var(--separator);
 	border-radius: var(--card-bdrs);
 }
 
