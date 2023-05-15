@@ -2,9 +2,9 @@
 title: "Food service disposables & packaging products"
 subtitle: "We manufacture quality products with complete adherence to international industry&nbsp;standards."
 featuredImage:
-  source: "http://via.placeholder.com/457x214"
+  source: "cardboard-packaging-large.webp"
   alt: ""
-  sizes: "100vw"
+  sizes: "(min-width: 54.75rem) 50vw, 100vw"
   loading: "eager"
   fetchPriority: "high"
 about:

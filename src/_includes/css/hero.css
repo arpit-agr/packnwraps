@@ -31,21 +31,11 @@
 
 #hero .desc {
 	font-size: var(--step-1);
-	color: var(--accent-darkest);
 }
 
 #hero .featured-img {
 	block-size: 100%;
 	position: relative;
-	border-radius: var(--space-3xs);
-}
-
-/* TODO: delete once the final image is added */
-#hero .featured-img:after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background-color: var(--gray-300);
 	border-radius: var(--space-3xs);
 }
 
@@ -58,6 +48,7 @@
 	inset-inline-start: 0;
 	inline-size: 100%;
 	block-size: 100%;
-	object-fit: cover;
+	object-fit: contain;
+	mix-blend-mode: darken;
 	border-radius: var(--space-3xs);
 }
