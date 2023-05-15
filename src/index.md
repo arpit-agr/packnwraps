@@ -31,14 +31,14 @@ products:
             - "Sleeve Bag"
         - name: "Mailers"
           image:
-            source: "2412295.jpg"
+            source: "Paper Mailer.jpg"
             alt: ""
           variants:
             - "Poly Mailers"
             - "Coex Mailers - Single and Double Seal"
         - name: "Containers"
           image:
-            source: "2007827.jpg"
+            source: "Paper Container.jpg"
             alt: ""
           variants:
             - "Kraft Take Out Containers"
@@ -52,7 +52,7 @@ products:
             - "Corrugated Clamshells - Available in all Flutes"
         - name: "Wraps / sheets"
           image:
-            source: "Figure-4-V-Bottom-Paper-Bag-with-Strip-Cut-Window.jpg"
+            source: "Paper Wraps.jpg"
             alt: ""
           variants:
             - "Deli Wraps"
@@ -97,7 +97,7 @@ products:
       items:
         - name: "Bags"
           image:
-            source: "2412295.jpg"
+            source: "Plastic Bags.jpg"
             alt: ""
           variants:
             - "T-shirt"
@@ -105,7 +105,7 @@ products:
             - "Soft Loop Handle"
         - name: "Mailers"
           image:
-            source: "2117943.jpg"
+            source: "Plastic Mailers.jpg"
             alt: ""
           variants:
             - "PP"
@@ -122,7 +122,7 @@ products:
             alt: ""
         - name: "Food Storage Bags"
           image:
-            source: "Figure-4-V-Bottom-Paper-Bag-with-Strip-Cut-Window.jpg"
+            source: "Food Storage Bags.jpg"
             alt: ""
           variants:
             - "Slider"
@@ -131,7 +131,7 @@ products:
       items:
         - name: "Plates"
           image:
-            source: "2412295.jpg"
+            source: "Plastic Plate.jpg"
             alt: ""
           variants:
             - "6″ to 10″ Round"
@@ -145,7 +145,7 @@ products:
             - "PET with Lids"
         - name: "Bowls"
           image:
-            source: "2096697.jpg"
+            source: "Plastic Bowls.jpg"
             alt: ""
           variants:
             - "12oz"
