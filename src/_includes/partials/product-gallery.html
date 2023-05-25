@@ -1,4 +1,4 @@
-<section id="gallery" class="disclosure-widget flow">
+<section id="gallery" class="disclosure-widget flow" aria-hidden="true">
   <h2 class="cluster fade-in">
     <span>{{ gallery.heading }}</span>
     {%- include "partials/columns.html" -%}
@@ -6,7 +6,6 @@
   <p class="desc fade-in">
     {{ gallery.description }}
   </p>
-  {# TODO: provide alt #}
   <ul class="gallery-list flow" role="list">
     {%- for image in collections.gallery -%}
       <li>
@@ -21,8 +20,8 @@
   </ul>
   <button
     class="view-more btn"
-    aria-expanded="false"
-    aria-controls="about-content"
+    aria-hidden="true"
+    tabindex="-1"
   >
     View More <span class="vh">images in the {{ gallery.heading }}</span>
   </button>
