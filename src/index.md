@@ -127,30 +127,6 @@ products:
           variants:
             - "Slider"
             - "Zip"
-    - title: "Plastic Tableware"
-      items:
-        - name: "Plates"
-          image:
-            source: "plastic-plate.jpg"
-            alt: ""
-          variants:
-            - "6″ to 10″ Round"
-        - name: "Cups"
-          image:
-            source: "2460479.jpg"
-            alt: ""
-          variants:
-            - "PP"
-            - "PP Coex"
-            - "PET with Lids"
-        - name: "Bowls"
-          image:
-            source: "plastic-bowls.jpg"
-            alt: ""
-          variants:
-            - "12oz"
-            - "16oz"
-            - "20oz"
     - title: "Bagasse Tableware"
       specialText: "PFAS free"
       items:
