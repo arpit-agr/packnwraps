@@ -27,6 +27,7 @@
 	align-items: baseline;
 	gap: var(--icon-text-gap);
 	margin-inline: auto;
+	transition: unset;
 }
 
 .has-js .view-more[aria-expanded="true"] {
