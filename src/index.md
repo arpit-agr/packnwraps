@@ -52,7 +52,7 @@ products:
             - "Corrugated Clamshells - Available in all Flutes"
         - name: "Wraps / sheets"
           image:
-            source: "paper-wraps.jpg"
+            source: "foil-cushion-sheets.png"
             alt: ""
           variants:
             - "Deli Wraps"
