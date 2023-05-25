@@ -85,6 +85,7 @@
 .product-items-list li > button {
 	--stack-gap: var(--space-2xs);
 	--stack-horizontal-alignment: center;
+	inline-size: 100%;
 }
 
 .product-items-list li picture {
