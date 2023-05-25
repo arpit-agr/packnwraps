@@ -8,7 +8,7 @@
 		(2 * var(--nav-link-padding)) + (1em * var(--body-line-height))
 	);
 	--main-padding: var(--space-xl-5xl);
-	--section-gap: var(--space-4xl);
+	--section-gap: var(--space-4xl-5xl);
 	--section-inner-padding: var(--space-l-xl);
 	--card-padding-block: var(--space-l-xl);
 	--card-padding-inline: var(--space-s-xl);
@@ -19,7 +19,7 @@
 	--button-padding: var(--button-padding-block) var(--button-padding-inline);
 	--icon-text-gap: var(--space-2xs);
 
-	--heading-text-color: var(--gray-100);
+	--heading-text-color: var(--gray-200);
 	--body-primary-color: var(--gray-200);
 	--body-secondary-color: var(--gray-300);
 	--body-bg-color: var(--gray-400);
@@ -96,12 +96,12 @@ h1 {
 }
 
 h2 {
-	font-size: var(--step-5);
+	font-size: var(--step-4);
 }
 
 h3 {
 	/* font-size: var(--step-3); */
-	font-size: var(--step-4);
+	font-size: var(--step-3);
 }
 
 p {
